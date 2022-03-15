@@ -1,0 +1,720 @@
+import React from "react";
+
+function Part4(){
+    return(
+        <>
+<div className="part4">
+
+<div className="R1">
+<div className="row1">
+<h2 className="headings">COMPANY</h2>
+<ul>
+    <li><a>About us</a></li>
+    <li><a>Team</a></li>
+    <li><a>Careers</a></li>
+    <li><a>Swiggy Blog</a></li>
+    <li><a>Bug Bounty</a></li>
+    <li><a>Swiggy One</a></li>
+    <li><a>Swiggy Corporate</a></li>
+    <li><a>Swiggy Instamart</a></li>
+</ul>
+</div>
+<div className="row2">
+<h2 className="headings">CONTACT</h2>
+<ul>
+    <li><a>Help & Support</a></li>
+    <li><a>Partner with us</a></li>
+    <li><a>Ride with us</a></li>
+</ul>
+</div>
+<div className="row3">
+<h2 className="headings">LEGAL</h2>
+<ul>
+    <li><a>Terms & Conditions</a></li>
+    <li><a>Refund & Cancellation</a></li>
+    <li><a>Privacy Policy</a></li>
+    <li><a>Cookie Policy</a></li>
+    <li><a>Offer Terms</a></li>
+    <li><a>Phishing & Fraud</a></li>
+</ul>
+</div>
+<div className="row3 rows">
+<img className="apps" src="./Images/app store.webp" alt="App-Store"/>
+    <img className="apps1" src="./Images/google pay.webp" alt="Google-Play"/>
+</div>
+</div>
+<div>
+<hr/>
+</div>
+<h2 className="headings1">WE DELIVER TO</h2>
+<div className="R2">
+<div className="row4">
+<ul>
+    <li><a>abohar</a></li>
+    <li><a>adilabad</a></li>
+    <li><a>adityapur</a></li>
+    <li><a>adoni</a></li>
+    <li><a>agartalay</a></li>
+    <li><a>agra</a></li>
+    <li><a>ahmedabad</a></li>
+    <li><a>ahmednagar</a></li>
+    <li><a>aizawl</a></li>
+    <li><a>ajmer</a></li>
+    <li><a>akola</a></li>
+    <li><a>alappuzha</a></li>
+    <li><a>aligarh</a></li>
+    <li><a>alipurduare</a></li>
+    <li><a>allahabad</a></li>
+    <li><a>almora</a></li>
+    <li><a>alwars</a></li>
+    <li><a>ambala</a></li>
+    <li><a>ambikapur</a></li>
+    <li><a>ambur</a></li>
+    <li><a>amravati</a></li>
+    <li><a>amreli</a></li>
+    <li><a>amritsar</a></li>
+    <li><a>amroha</a></li>
+    <li><a>anand</a></li>
+    <li><a>anantapur</a></li>
+    <li><a>angul</a></li>
+    <li><a>ankleshwar</a></li>
+    <li><a>arakkonam</a></li>
+    <li><a>arambagh</a></li>
+    <li><a>arrah</a></li>
+    <li><a>aruppukottai</a></li>
+    <li><a>asansol</a></li>
+    <li><a>ashoknagar</a></li>
+    <li><a>aurangabad</a></li>
+    <li><a>aurangabad_bihar</a></li>
+    <li><a>azamgarh</a></li>
+    <li><a>baddi</a></li>
+    <li><a>bagalkot</a></li>
+    <li><a>bagdogra</a></li>
+    <li><a>bagula</a></li>
+    <li><a>bahadurgarh</a></li>
+    <li><a>bahraich</a></li>
+    <li><a>bajpe</a></li>
+    <li><a>balaghat</a></li>
+    <li><a>balangir</a></li>
+    <li><a>balasore</a></li>
+    <li><a>ballari</a></li>
+    <li><a>balrampur</a></li>
+    <li><a>balurghat</a></li>
+    <li><a>banda</a></li>
+    <li><a>bangalore</a></li>
+    <li><a>bankura</a></li>
+    <li><a>banswara</a></li>
+    <li><a>bantwal</a></li>
+    <li><a>bapatlachirala</a></li>
+    <li><a>baran</a></li>
+    <li><a>baraut</a></li>
+    <li><a>bardhaman</a></li>
+    <li><a>bardoli</a></li>
+    <li><a>bareilly</a></li>
+    <li><a>barmer</a></li>
+    <li><a>barnala</a></li>
+    <li><a>barshi</a></li>
+    <li><a>barwani</a></li>
+    <li><a>basirhat</a></li>
+    <li><a>basti</a></li>
+    <li><a>batala</a></li>
+    <li><a>bathinda</a></li>
+    <li><a>beawar</a></li>
+    <li><a>beed</a></li>
+    <li><a>begusarai</a></li>
+    <li><a>bela-pratapgarh</a></li>
+    <li><a>belgaum</a></li>
+    <li><a>berhampore</a></li>
+    <li><a>berhampur</a></li>
+    <li><a>bettiah</a></li>
+    <li><a>betul</a></li>
+    <li><a>bhadohi</a></li>
+    <li><a>bhadrachalam</a></li>
+    <li><a>bhadrak</a></li>
+    <li><a>bhadravati</a></li>
+    <li><a>bhagalpur</a></li>
+    <li><a>bhandara</a></li>
+    <li><a>bharabanki</a></li>
+    <li><a>bharatpur</a></li>
+    <li><a>bharuch</a></li>
+    <li><a>bhatapara</a></li>
+    <li><a>bhatkal</a></li>
+    <li><a>bhavnagar</a></li>
+    <li><a>bhawanipatna</a></li>
+    <li><a>bhilai</a></li>
+    <li><a>bhilwara</a></li>
+    <li><a>bhimavaram</a></li>
+    <li><a>bhind</a></li>
+    <li><a>bhiwadi</a></li>
+    <li><a>bhiwani</a></li>
+    <li><a>bhopal</a></li>
+    <li><a>bhubaneswar</a></li>
+    <li><a>bhuj</a></li>
+    <li><a>bhusawal</a></li>
+    <li><a>bidar</a></li>
+    <li><a>biharsharif</a></li>
+    <li><a>bijapur</a></li>
+    <li><a>bijnor</a></li>
+    <li><a>bikaner</a></li>
+    <li><a>bilaspur</a></li>
+    <li><a>bilaspur-hp</a></li>
+    <li><a>bilimora</a></li>
+    <li><a>bina</a></li>
+    <li><a>bodhan-rural</a></li>
+    <li><a>bodinayakanur</a></li>
+    <li><a>boisar</a></li>
+    <li><a>bokaro</a></li>
+    <li><a>bolpur</a></li>
+    <li><a>bongaigaon</a></li>
+    <li><a>bongaon</a></li>
+    <li><a>botad</a></li>
+    <li><a>budaun</a></li>
+    <li><a>budhwal</a></li>
+    <li><a>bulandshahr</a></li>
+    <li><a>bundi</a></li>
+    <li><a>burhanpur</a></li>
+    <li><a>buxar</a></li>
+    <li><a>central-goa</a></li>
+    <li><a>chakdaha</a></li>
+    <li><a>chalakkudy</a></li>
+    <li><a>chalisgaon</a></li>
+    <li><a>chandausi</a></li>
+    <li><a>chandigarh</a></li>
+    <li><a>chandrapur</a></li>
+    <li><a>changanassery</a></li>
+    <li><a>charkhi-dadri</a></li>
+    <li><a>chengannur</a></li>
+    <li><a>chennai</a></li>
+    <li><a>cherthala</a></li>
+    <li><a>chhapra</a></li>
+    <li><a>chhatarpur</a></li>
+    <li><a>chhindwara</a></li>
+    <li><a>chidambaram</a></li>
+    <li><a>chikhli</a></li>
+    <li><a>chikkaballapur</a></li>
+    <li><a>chikmagalur</a></li>
+    <li><a>chilakaluripet</a></li>
+    <li><a>chiplun</a></li>
+    <li><a>chitradurga</a></li>
+    <li><a>chittoor</a></li>
+    <li><a>chittorgarh</a></li>
+    <li><a>chopda</a></li>
+    <li><a>churu</a></li>
+    <li><a>coimbatore</a></li>
+    <li><a>cooch-behar</a></li>
+    <li><a>cuddalore</a></li>
+    <li><a>cuttack</a></li>
+    <li><a>dabhoi</a></li>
+    <li><a>dabra</a></li>
+    <li><a>dahanu</a></li>
+    <li><a>dahod</a></li>
+    <li><a>daltonganj</a></li>
+    <li><a>daman</a></li>
+</ul>
+</div>
+<div className="row5">
+<ul>
+<li><a>damoh</a></li>
+<li><a>darbhanga</a></li>
+<li><a>darjeeling</a></li>
+<li><a>datia</a></li>
+<li><a>daund</a></li>
+<li><a>dausa</a></li>
+<li><a>davanagere</a></li>
+<li><a>dehradun</a></li>
+<li><a>dehri</a></li>
+<li><a>delhi</a></li>
+<li><a>deoghar</a></li>
+<li><a>dewas</a></li>
+<li><a>dhamtari</a></li>
+<li><a>dhanbad</a></li>
+<li><a>dhar</a></li>
+<li><a>dharamshala</a></li>
+<li><a>dharapuram</a></li>
+<li><a>dharmapuri</a></li>
+<li><a>dharwad</a></li>
+<li><a>dhoraji</a></li>
+<li><a>dhule</a></li>
+<li><a>digha</a></li>
+<li><a>dimapur</a></li>
+<li><a>dindigul</a></li>
+<li><a>diu</a></li>
+<li><a>doddaballapura</a></li>
+<li><a>duliajan</a></li>
+<li><a>dumka</a></li>
+<li><a>durgapur</a></li>
+<li><a>eluru</a></li>
+<li><a>erode</a></li>
+<li><a>etah</a></li>
+<li><a>etawah</a></li>
+<li><a>faizabad</a></li>
+<li><a>faridabad</a></li>
+<li><a>faridkot</a></li>
+<li><a>farrukhabad</a></li>
+<li><a>fatehabad</a></li>
+<li><a>fatehgarh-sahib</a></li>
+<li><a>fatehpur</a></li>
+<li><a>fazilka</a></li>
+<li><a>firozabad</a></li>
+<li><a>firozpur</a></li>
+<li><a>gadag-betigeri</a></li>
+<li><a>gadwal</a></li>
+<li><a>gandhidham</a></li>
+<li><a>gangapur-city</a></li>
+<li><a>gangarampur</a></li>
+<li><a>gangawati</a></li>
+<li><a>gangtok</a></li>
+<li><a>gauriganj</a></li>
+<li><a>gaya</a></li>
+<li><a>gharaunda</a></li>
+<li><a>giridih</a></li>
+<li><a>godhra</a></li>
+<li><a>gohana</a></li>
+<li><a>gokak</a></li>
+<li><a>gokarna</a></li>
+<li><a>golaghat</a></li>
+<li><a>gonda</a></li>
+<li><a>gondal</a></li>
+<li><a>gondia</a></li>
+<li><a>gopalganj</a></li>
+<li><a>gorakhpur</a></li>
+<li><a>gudivada</a></li>
+<li><a>guna</a></li>
+<li><a>guntakal</a></li>
+<li><a>guntur</a></li>
+<li><a>gurdaspur</a></li>
+<li><a>gurgaon</a></li>
+<li><a>guwahati</a></li>
+<li><a>gwalior</a></li>
+<li><a>habra</a></li>
+<li><a>haldia</a></li>
+<li><a>haldwani</a></li>
+<li><a>halol</a></li>
+<li><a>hampi</a></li>
+<li><a>hansi</a></li>
+<li><a>hanumangarh</a></li>
+<li><a>hapur</a></li>
+<li><a>hardoi</a></li>
+<li><a>haridwar</a></li>
+<li><a>hassan</a></li>
+<li><a>hathras</a></li>
+<li><a>himmatnagar</a></li>
+<li><a>hindaun</a></li>
+<li><a>hinganghat</a></li>
+<li><a>hisar</a></li>
+<li><a>hoshangabad</a></li>
+<li><a>hoshiarpur</a></li>
+<li><a>hospet</a></li>
+<li><a>hubli</a></li>
+<li><a>hyderabad</a></li>
+<li><a>idukki</a></li>
+<li><a>imphal</a></li>
+<li><a>indore</a></li>
+<li><a>irinjalakuda</a></li>
+<li><a>itanagar</a></li>
+<li><a>itarsi</a></li>
+<li><a>jabalpur</a></li>
+<li><a>jagdalpur</a></li>
+<li><a>jagraon</a></li>
+<li><a>jagtial</a></li>
+<li><a>jahanabad</a></li>
+<li><a>jaigaon</a></li>
+<li><a>jaipur</a></li>
+<li><a>jalandhar</a></li>
+<li><a>jalaun</a></li>
+<li><a>jalgaon</a></li>
+<li><a>jalna</a></li>
+<li><a>jalpaiguri</a></li>
+<li><a>jammu</a></li>
+<li><a>jamnagar</a></li>
+<li><a>jamshedpur</a></li>
+<li><a>janjgir</a></li>
+<li><a>jaunpur</a></li>
+<li><a>jhalawar</a></li>
+<li><a>jhansi</a></li>
+<li><a>jhargram</a></li>
+<li><a>jhunjhunu</a></li>
+<li><a>jind</a></li>
+<li><a>jodhpur</a></li>
+<li><a>jorhat</a></li>
+<li><a>junagadh</a></li>
+<li><a>kadapa</a></li>
+<li><a>kadayanallur</a></li>
+<li><a>kaithal</a></li>
+<li><a>kakinada</a></li>
+<li><a>kalaburagi</a></li>
+<li><a>kalady</a></li>
+<li><a>kalna</a></li>
+<li><a>kamareddy</a></li>
+<li><a>kanchrapara</a></li>
+<li><a>kanker</a></li>
+<li><a>kannauj</a></li>
+<li><a>kannur</a></li>
+<li><a>kanpur</a></li>
+<li><a>kanyakumari</a></li>
+<li><a>kapurthala</a></li>
+<li><a>karad</a></li>
+<li><a>karaikkudi</a></li>
+<li><a>karimnagar</a></li>
+<li><a>karnal</a></li>
+<li><a>karunagappaly</a></li>
+<li><a>karur</a></li>
+<li><a>karwar</a></li>
+<li><a>kasaragod</a></li>
+<li><a>kashipur</a></li>
+<li><a>katihar</a></li>
+<li><a>katni</a></li>
+<li><a>kavali</a></li>
+<li><a>kayamkulam</a></li>
+<li><a>kendujhar</a></li>
+<li><a>khalilabad</a></li>
+<li><a>khamgaon</a></li>
+<li><a>khammam</a></li>
+<li><a>khandwa</a></li>
+<li><a>khanna</a></li>
+<li><a>kharagpur</a></li>
+</ul>
+</div>
+<div className="row6">
+<ul>
+<li><a>khargone</a></li>
+<li><a>khopoli</a></li>
+<li><a>kishanganj</a></li>
+<li><a>kishangarh</a></li>
+<li><a>kochi</a></li>
+<li><a>kodaikanal</a></li>
+<li><a>kohima</a></li>
+<li><a>kolar</a></li>
+<li><a>kolhapur</a></li>
+<li><a>kolkata</a></li>
+<li><a>kollam</a></li>
+<li><a>kopargaon</a></li>
+<li><a>koppal</a></li>
+<li><a>korba</a></li>
+<li><a>kota</a></li>
+<li><a>kotdwar</a></li>
+<li><a>kothagudem</a></li>
+<li><a>kothamanagalam</a></li>
+<li><a>kottakkal</a></li>
+<li><a>kottarakkara</a></li>
+<li><a>kottayam</a></li>
+<li><a>kovilpatti</a></li>
+<li><a>kozhikode</a></li>
+<li><a>krishnagiri</a></li>
+<li><a>krishnanagar</a></li>
+<li><a>kuchaman</a></li>
+<li><a>kumarakom</a></li>
+<li><a>kumbakonam</a></li>
+<li><a>kumta</a></li>
+<li><a>kundapura</a></li>
+<li><a>kunnamkullam</a></li>
+<li><a>kurnool</a></li>
+<li><a>kurukshetra</a></li>
+<li><a>lakhimpu</a></li>
+<li><a>lalitpur</a></li>
+<li><a>latur</a></li>
+<li><a>lonavala</a></li>
+<li><a>lonavla</a></li>
+<li><a>lucknow</a></li>
+<li><a>ludhiana</a></li>
+<li><a>machilipatnam</a></li>
+<li><a>madanapalle</a></li>
+<li><a>madhubani</a></li>
+<li><a>madikeri</a></li>
+<li><a>madurai</a></li>
+<li><a>mahabaleshwar</a></li>
+<li><a>mahasamund</a></li>
+<li><a>mahbubnagar</a></li>
+<li><a>mahoba</a></li>
+<li><a>malappuram</a></li>
+<li><a>malda</a></li>
+<li><a>malegaon</a></li>
+<li><a>mallapuram</a></li>
+<li><a>malout</a></li>
+<li><a>manali</a></li>
+<li><a>mancherial</a></li>
+<li><a>mandi-dabwali</a></li>
+<li><a>mandi-gobindgarh</a></li>
+<li><a>mandi-hp</a></li>
+<li><a>mandsaur</a></li>
+<li><a>mandya</a></li>
+<li><a>mangaluru</a></li>
+<li><a>manipal</a></li>
+<li><a>manjeri</a></li>
+<li><a>mannargudi</a></li>
+<li><a>mansa</a></li>
+<li><a>markapur</a></li>
+<li><a>mathura</a></li>
+<li><a>maunath-bhanjan</a></li>
+<li><a>mayiladuthurai</a></li>
+<li><a>medak</a></li>
+<li><a>medinipur</a></li>
+<li><a>meerut</a></li>
+<li><a>mehsana</a></li>
+<li><a>miryalaguda</a></li>
+<li><a>mirzapur</a></li>
+<li><a>modinagar</a></li>
+<li><a>moga</a></li>
+<li><a>moodbidri</a></li>
+<li><a>moradabad</a></li>
+<li><a>morbi</a></li>
+<li><a>morena</a></li>
+<li><a>motihari</a></li>
+<li><a>mount-abu</a></li>
+<li><a>mughalsarai</a></li>
+<li><a>muktsar</a></li>
+<li><a>mumbai</a></li>
+<li><a>munger</a></li>
+<li><a>murdeshwar</a></li>
+<li><a>murshidabad</a></li>
+<li><a>mussoorie</a></li>
+<li><a>muvattupuzha</a></li>
+<li><a>muzaffarnagar</a></li>
+<li><a>muzaffarpur</a></li>
+<li><a>mysore</a></li>
+<li><a>nabadwip</a></li>
+<li><a>nadiad</a></li>
+<li><a>nagaon</a></li>
+<li><a>nagapattinam</a></li>
+<li><a>nagda</a></li>
+<li><a>nagercoil</a></li>
+<li><a>nagpur</a></li>
+<li><a>nagur</a></li>
+<li><a>naharlagun</a></li>
+<li><a>nainital</a></li>
+<li><a>nalgonda</a></li>
+<li><a>namakkal</a></li>
+<li><a>nanded</a></li>
+<li><a>nandurbar</a></li>
+<li><a>nandyal</a></li>
+<li><a>nangal</a></li>
+<li><a>naraingarh</a></li>
+<li><a>narnaul</a></li>
+<li><a>narsinghpur</a></li>
+<li><a>narwana</a></li>
+<li><a>nashik</a></li>
+<li><a>nathdwara</a></li>
+<li><a>navsari</a></li>
+<li><a>neemuch</a></li>
+<li><a>nellore</a></li>
+<li><a>neyveli</a></li>
+<li><a>nipani</a></li>
+<li><a>nirmal</a></li>
+<li><a>nizamabad</a></li>
+<li><a>noida</a></li>
+<li><a>noida-1</a></li>
+<li><a>north-goa</a></li>
+<li><a>ongole</a></li>
+<li><a>ooty</a></li>
+<li><a>orai</a></li>
+<li><a>osmanabad</a></li>
+<li><a>pala</a></li>
+<li><a>palakkad</a></li>
+<li><a>palampur</a></li>
+<li><a>palani</a></li>
+<li><a>palanpur</a></li>
+<li><a>pali</a></li>
+<li><a>palwal</a></li>
+<li><a>panchgani</a></li>
+<li><a>panipat</a></li>
+<li><a>paramakudi</a></li>
+<li><a>parbhani</a></li>
+<li><a>patan</a></li>
+<li><a>pathankot</a></li>
+<li><a>patiala</a></li>
+<li><a>patna</a></li>
+<li><a>pattukkottai</a></li>
+<li><a>payyannur</a></li>
+<li><a>perambalur</a></li>
+<li><a>phagwara</a></li>
+<li><a>phaltan</a></li>
+<li><a>phusro</a></li>
+<li><a>pilani</a></li>
+<li><a>pilibhit</a></li>
+<li><a>pondicherry</a></li>
+<li><a>porbandar</a></li>
+<li><a>port-blair</a></li>
+<li><a>pratapgarh</a></li>
+</ul>
+</div>
+<div className="row7">
+<ul>
+<li><a>proddatur</a></li>
+<li><a>pudukkottai</a></li>
+<li><a>pune</a></li>
+<li><a>puri</a></li>
+<li><a>purnea</a></li>
+<li><a>purulia</a></li>
+<li><a>pusad</a></li>
+<li><a>puttur</a></li>
+<li><a>puttur-karnataka</a></li>
+<li><a>rae-bareli</a></li>
+<li><a>raghunathpur</a></li>
+<li><a>raichur</a></li>
+<li><a>raiganj</a></li>
+<li><a>raigarh</a></li>
+<li><a>raipur</a></li>
+<li><a>rajahmundry</a></li>
+<li><a>rajapalayam</a></li>
+<li><a>rajgarh</a></li>
+<li><a>rajkot</a></li>
+<li><a>rajnandgaon</a></li>
+<li><a>rajsamand</a></li>
+<li><a>ramagundam</a></li>
+<li><a>ramanagara</a></li>
+<li><a>ramanathapuram</a></li>
+<li><a>ramgarh</a></li>
+<li><a>rampur</a></li>
+<li><a>ranaghat</a></li>
+<li><a>ranaghat-wb</a></li>
+<li><a>ranchi</a></li>
+<li><a>rangpo</a></li>
+<li><a>ranibennur</a></li>
+<li><a>raniganj</a></li>
+<li><a>ratlam</a></li>
+<li><a>ratnagiri</a></li>
+<li><a>rayachoty</a></li>
+<li><a>rewa</a></li>
+<li><a>rewari</a></li>
+<li><a>rishikesh</a></li>
+<li><a>rohtak</a></li>
+<li><a>roorkee</a></li>
+<li><a>ropar</a></li>
+<li><a>rourkela</a></li>
+<li><a>rudrapur</a></li>
+<li><a>sagar</a></li>
+<li><a>sagara</a></li>
+<li><a>saharanpur</a></li>
+<li><a>saharsa</a></li>
+<li><a>salem</a></li>
+<li><a>samastipur</a></li>
+<li><a>sambalpur</a></li>
+<li><a>sambhal</a></li>
+<li><a>sangamner</a></li>
+<li><a>sangaria</a></li>
+<li><a>sangli</a></li>
+<li><a>sangrur</a></li>
+<li><a>sardarshahar</a></li>
+<li><a>sasaram</a></li>
+<li><a>satara</a></li>
+<li><a>satna</a></li>
+<li><a>sawai-madhopur</a></li>
+<li><a>sehore</a></li>
+<li><a>seoni</a></li>
+<li><a>shahjahanpur</a></li>
+<li><a>shamli</a></li>
+<li><a>shikohabad</a></li>
+<li><a>shillong</a></li>
+<li><a>shimla</a></li>
+<li><a>shivamogga</a></li>
+<li><a>shivpuri</a></li>
+<li><a>shravasti</a></li>
+<li><a>shrirampur</a></li>
+<li><a>siddipet</a></li>
+<li><a>sikar</a></li>
+<li><a>silchar</a></li>
+<li><a>siliguri</a></li>
+<li><a>silvassa</a></li>
+<li><a>sindhanur</a></li>
+<li><a>singrauli</a></li>
+<li><a>sirkali</a></li>
+<li><a>sirohi</a></li>
+<li><a>sirsa</a></li>
+<li><a>sirsi</a></li>
+<li><a>sitamarhi</a></li>
+<li><a>sitapur</a></li>
+<li><a>sivakasi</a></li>
+<li><a>sivasagar</a></li>
+<li><a>siwan</a></li>
+<li><a>solan</a></li>
+<li><a>solapur</a></li>
+<li><a>sonipat</a></li>
+<li><a>south-goa</a></li>
+<li><a>sri-ganganagar</a></li>
+<li><a>srikakulam</a></li>
+<li><a>srivilliputhur</a></li>
+<li><a>sultanpur</a></li>
+<li><a>surat</a></li>
+<li><a>suratgarh</a></li>
+<li><a>surendranagar-dudhrej</a></li>
+<li><a>suri</a></li>
+<li><a>suryapet</a></li>
+<li><a>tadepalligudem</a></li>
+<li><a>tadpatri</a></li>
+<li><a>tamluk</a></li>
+<li><a>tanuku</a></li>
+<li><a>tarn-taran-sahib</a></li>
+<li><a>tenkasi</a></li>
+<li><a>tezpur</a></li>
+<li><a>thalassery</a></li>
+<li><a>thanjavur</a></li>
+<li><a>theni</a></li>
+<li><a>thiruvalla</a></li>
+<li><a>thiruvallur</a></li>
+<li><a>thiruvananthapuram</a></li>
+<li><a>thiruvarur</a></li>
+<li><a>thodupuzha</a></li>
+<li><a>thoothukudi</a></li>
+<li><a>thoubal</a></li>
+<li><a>thrissur</a></li>
+<li><a>tindivanam</a></li>
+<li><a>tinsukia</a></li>
+<li><a>tiptur</a></li>
+<li><a>tirunelveli</a></li>
+<li><a>tirupati</a></li>
+<li><a>tirupur</a></li>
+<li><a>tiruttani</a></li>
+<li><a>tiruvannamalai</a></li>
+<li><a>tohana</a></li>
+<li><a>tonk</a></li>
+<li><a>trichy</a></li>
+<li><a>tumakuru</a></li>
+<li><a>tuni</a></li>
+<li><a>udaipur</a></li>
+<li><a>udgir</a></li>
+<li><a>udhampur</a></li>
+<li><a>ujjain</a></li>
+<li><a>uluberia</a></li>
+<li><a>unnao</a></li>
+<li><a>uran-islampur</a></li>
+<li><a>vadodara</a></li>
+<li><a>valsad</a></li>
+<li><a>vapi</a></li>
+<li><a>varanasi</a></li>
+<li><a>varkala</a></li>
+<li><a>vellore</a></li>
+<li><a>veraval</a></li>
+<li><a>vidisha</a></li>
+<li><a>vijayawada</a></li>
+<li><a>viluppuram</a></li>
+<li><a>visnagar</a></li>
+<li><a>vizag</a></li>
+<li><a>vizianagaram</a></li>
+<li><a>vyara</a></li>
+<li><a>waidhan</a></li>
+<li><a>warangal</a></li>
+<li><a>wardha</a></li>
+<li><a>washim</a></li>
+<li><a>wayanad</a></li>
+<li><a>yamuna-nagar</a></li>
+<li><a>yavatmal</a></li>
+   </ul>
+</div>
+</div>
+<hr/>
+<div className="R3">
+<img className="swiggy" src="./Images/swiggy.webp" alt="logo"/>
+<p className="copy">&copy; 2022 Swiggy</p>
+<div>
+<i class="fa fa-facebook-f fa1"></i>
+<i class="fa fa-pinterest fa2"></i>
+<i class="fa fa-instagram fa3"></i>
+<i class="fa fa-twitter fa4"></i>
+</div>
+</div>
+</div>
+        </>
+    );
+}
+
+export default Part4;

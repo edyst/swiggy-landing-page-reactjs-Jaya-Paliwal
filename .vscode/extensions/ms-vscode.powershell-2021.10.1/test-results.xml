@@ -1,0 +1,48 @@
+<testsuite name="Mocha Tests" tests="46" failures="0" errors="0" skipped="1" timestamp="Wed, 20 Oct 2021 17:18:34 GMT" time="28.26">
+<testcase classname="Path assumptions" name="The examples folder can be opened (and exists)" time="0"><skipped/></testcase>
+<testcase classname="Path assumptions" name="The session folder is created in the right place" time="0"/>
+<testcase classname="Path assumptions" name="The logs folder is created in the right place" time="0"/>
+<testcase classname="Platform module Default PowerShell installation" name="Default PowerShell path on Windows 64-bit, 64-bit VSCode (all installations)" time="0.006"/>
+<testcase classname="Platform module Default PowerShell installation" name="Default PowerShell path on Windows 64-bit, 64-bit VSCode (only Windows PowerShell)" time="0.003"/>
+<testcase classname="Platform module Default PowerShell installation" name="Default PowerShell path on Windows 64-bit, 32-bit VSCode (all installations)" time="0.003"/>
+<testcase classname="Platform module Default PowerShell installation" name="Default PowerShell path on Windows 64-bit, 32-bit VSCode (Windows PowerShell only)" time="0.003"/>
+<testcase classname="Platform module Default PowerShell installation" name="Default PowerShell path on Windows 32-bit, 32-bit VSCode (all installations)" time="0.003"/>
+<testcase classname="Platform module Default PowerShell installation" name="Default PowerShell path on Windows 32-bit, 32-bit VSCode (Windows PowerShell only)" time="0.003"/>
+<testcase classname="Platform module Default PowerShell installation" name="Extension startup fails gracefully on Linux (no PowerShell)" time="0"/>
+<testcase classname="Platform module Default PowerShell installation" name="Extension startup fails gracefully on MacOS (no PowerShell)" time="0"/>
+<testcase classname="Platform module Expected PowerShell installation list" name="PowerShell installation list on Windows 64-bit, 64-bit VSCode (all installations)" time="0.004"/>
+<testcase classname="Platform module Expected PowerShell installation list" name="PowerShell installation list on Windows 64-bit, 64-bit VSCode (only Windows PowerShell)" time="0.003"/>
+<testcase classname="Platform module Expected PowerShell installation list" name="PowerShell installation list on Windows 64-bit, 32-bit VSCode (all installations)" time="0.009"/>
+<testcase classname="Platform module Expected PowerShell installation list" name="PowerShell installation list on Windows 64-bit, 32-bit VSCode (Windows PowerShell only)" time="0.003"/>
+<testcase classname="Platform module Expected PowerShell installation list" name="PowerShell installation list on Windows 32-bit, 32-bit VSCode (all installations)" time="0.003"/>
+<testcase classname="Platform module Expected PowerShell installation list" name="PowerShell installation list on Windows 32-bit, 32-bit VSCode (Windows PowerShell only)" time="0.003"/>
+<testcase classname="Platform module Expected PowerShell installation list" name="Extension startup fails gracefully on Linux (no PowerShell)" time="0.001"/>
+<testcase classname="Platform module Expected PowerShell installation list" name="Extension startup fails gracefully on MacOS (no PowerShell)" time="0"/>
+<testcase classname="Platform module Windows PowerShell path fix" name="Corrects the Windows PowerShell path on Windows 64-bit, 64-bit VSCode (all installations)" time="0.002"/>
+<testcase classname="Platform module Windows PowerShell path fix" name="Corrects the Windows PowerShell path on Windows 64-bit, 64-bit VSCode (only Windows PowerShell)" time="0.003"/>
+<testcase classname="Platform module Windows PowerShell path fix" name="Corrects the Windows PowerShell path on Windows 64-bit, 32-bit VSCode (all installations)" time="0.002"/>
+<testcase classname="Platform module Windows PowerShell path fix" name="Corrects the Windows PowerShell path on Windows 64-bit, 32-bit VSCode (Windows PowerShell only)" time="0.002"/>
+<testcase classname="Platform module Windows PowerShell path fix" name="Corrects the Windows PowerShell path on Windows 32-bit, 32-bit VSCode (all installations)" time="0.002"/>
+<testcase classname="Platform module Windows PowerShell path fix" name="Corrects the Windows PowerShell path on Windows 32-bit, 32-bit VSCode (Windows PowerShell only)" time="0.002"/>
+<testcase classname="Settings module" name="Settings load without error" time="0"/>
+<testcase classname="Settings module" name="Settings update correctly" time="1.092"/>
+<testcase classname="Settings module" name="Settings that can only be user settings update correctly" time="0.179"/>
+<testcase classname="Settings module" name="Can get effective configuration target" time="0.066"/>
+<testcase classname="CustomViews tests" name="Can create an HtmlContentView and get its content - Basic" time="0"/>
+<testcase classname="CustomViews tests" name="Can create an HtmlContentView and get its content - With JavaScript file" time="0.001"/>
+<testcase classname="CustomViews tests" name="Can create an HtmlContentView and get its content - With 2 JavaScript files in two different locations" time="0"/>
+<testcase classname="CustomViews tests" name="Can create an HtmlContentView and get its content - With JavaScript and CSS file" time="0.001"/>
+<testcase classname="ExternalApi feature - Registration API" name="It can register and unregister an extension" time="0.001"/>
+<testcase classname="ExternalApi feature - Registration API" name="It can register and unregister an extension with a version" time="0.001"/>
+<testcase classname="ExternalApi feature - Registration API" name="API fails if not registered" time="0"/>
+<testcase classname="ExternalApi feature - Registration API" name="It can&#x27;t register the same extension twice" time="0.002"/>
+<testcase classname="ExternalApi feature - Registration API" name="It can&#x27;t unregister an extension that isn&#x27;t registered" time="0"/>
+<testcase classname="ExternalApi feature - Other APIs" name="It can get PowerShell version details" time="5.111"/>
+<testcase classname="ISECompatibility feature" name="It sets ISE Settings" time="0.001"/>
+<testcase classname="ISECompatibility feature" name="It unsets ISE Settings" time="0.542"/>
+<testcase classname="ISECompatibility feature" name="It doesn&#x27;t change theme when disabled if theme was manually changed after being enabled" time="0.48"/>
+<testcase classname="RunCode tests" name="Can create the launch config" time="0.001"/>
+<testcase classname="RunCode tests" name="Can run Pester tests from file" time="17.091"/>
+<testcase classname="UpdatePowerShell tests" name="Can get the latest version" time="0.195"/>
+<testcase classname="UpdatePowerShell tests" name="Can get the latest preview version" time="0.785"/>
+</testsuite>

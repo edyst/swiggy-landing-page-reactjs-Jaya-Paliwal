@@ -1,0 +1,2211 @@
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="setup" timestamp="01-10-2021 15:13:02">
+	<button id="simple_action_btn" OnPress="simple_action_btn_OnPress" OnPressID="simple_headend_combobox"/>
+	<menuitem id="vpn_connect_toggle_menu_item" OnPress="vpn_connect_toggle_menu_item_OnPress" OnPressID="simple_headend_combobox"/>
+	<combobox id="simple_headend_combobox" OnSelect="simple_headend_combobox_OnSelect" OnSelectID="simple_headend_combobox"/>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<label id="simple_substatus_full" value=""/>
+	<label id="simple_tile_label" value="VPN:"/>
+	<preferences/>
+	<outlinelistbox id="stat_outlinelistbox" updaterows="false" num_columns="2">
+		<listgroup id="group_connection_info">
+			<listrowcolumn label="Connection Information"/>
+			<listrow id="id_stat_state">
+				<listrowcolumn label="State:"/>
+				<listrowcolumn label="Disconnected"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v4">
+				<listrowcolumn label="Tunnel Mode (IPv4):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v6">
+				<listrowcolumn label="Tunnel Mode (IPv6):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_dyn_exc">
+				<listrowcolumn label="Dynamic Tunnel Exclusion:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_dyn_inc">
+				<listrowcolumn label="Dynamic Tunnel Inclusion:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_time_connected">
+				<listrowcolumn label="Duration:"/>
+				<listrowcolumn label="00:00:00"/>
+			</listrow>
+			<listrow id="id_session_disconnect">
+				<listrowcolumn label="Session Disconnect:"/>
+				<listrowcolumn label="None"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_addr_info">
+			<listrowcolumn label="Address Information"/>
+			<listrow id="id_client_addr_ipv4">
+				<listrowcolumn label="Client (IPv4):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_client_addr_ipv6">
+				<listrowcolumn label="Client (IPv6):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_server_addr">
+				<listrowcolumn label="Server:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_bytes">
+			<listrowcolumn label="Bytes"/>
+			<listrow id="id_bytes_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_bytes_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_frames">
+			<listrowcolumn label="Frames"/>
+			<listrow id="id_frames_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_frames_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_ctrl_frames">
+			<listrowcolumn label="Control Frames"/>
+			<listrow id="id_ctrl_frames_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_ctrl_frames_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_client_mgmt">
+			<listrowcolumn label="Client Management"/>
+			<listrow id="id_admin_domain">
+				<listrowcolumn label="Administrative Domain:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_profile_name">
+				<listrowcolumn label="Profile Name:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_transport_info">
+			<listrowcolumn label="Transport Information"/>
+			<listrow id="id_protocol">
+				<listrowcolumn label="Protocol:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_cipher">
+				<listrowcolumn label="Cipher:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_compression">
+				<listrowcolumn label="Compression:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_proxy_addr">
+				<listrowcolumn label="Proxy Address:"/>
+				<listrowcolumn label="No Proxy"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_feature_config">
+			<listrowcolumn label="Feature Configuration"/>
+			<listrow id="id_fips_mode">
+				<listrowcolumn label="FIPS Mode:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tnd_mode">
+				<listrowcolumn label="Trusted Network Detection:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_always_on_mode">
+				<listrowcolumn label="Always On:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_sms">
+			<listrowcolumn label="Secure Mobility Solution"/>
+			<listrow id="id_secure_mobility_soln_status">
+				<listrowcolumn label="Status:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_secure_mobility_soln_appl">
+				<listrowcolumn label="Appliance:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+	</outlinelistbox>
+	<button id="stat_reset_btn" label="Reset" disabled="true" OnPress="stat_reset_btn_OnPress"/>
+	<button id="stat_export_btn" label="Export Stats..." OnPress="stat_export_btn_OnPress"/>
+	<outlinelistbox id="routes_outlinelistbox" updaterows="false" num_columns="1"/>
+	<outlinelistbox id="firewall_outlinelistbox" updaterows="false" num_columns="6">
+		<listhead>
+			<listheader label="Interface"/>
+			<listheader label="Permission"/>
+			<listheader label="Protocol"/>
+			<listheader label="Src Port"/>
+			<listheader label="Dst Port"/>
+			<listheader label="Destination Address"/>
+		</listhead>
+	</outlinelistbox>
+	<outlinelistbox id="overview_stat_outlinelistbox" updaterows="true" num_columns="2">
+		<listgroup id="group_vpn">
+			<listrowcolumn label="VPN (Disconnected)"/>
+			<listrow id="id_bytes_sent">
+				<listrowcolumn label="Bytes Sent: "/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_bytes_recv">
+				<listrowcolumn label="Bytes Received: "/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_time_connected">
+				<listrowcolumn label="Time Connected: "/>
+				<listrowcolumn label="00:00:00"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v4">
+				<listrowcolumn label="Client Address (IPv4): "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v6">
+				<listrowcolumn label="Client Address (IPv6): "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_server_addr">
+				<listrowcolumn label="Server Address: "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+	</outlinelistbox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:13:02" state="Neutral">
+	<traystate id="tray_state_string" value="Disconnected"/>
+	<button id="stat_reset_btn" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="false"/>
+	<button id="simple_action_btn" label="Connect" disabled="false" focus="true"/>
+	<combobox id="simple_headend_combobox" disabled="false" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<application disableQuit="false"/>
+	<preferences>
+		<row>
+			<checkbox id="AutoConnectOnStart" label="Start VPN when AnyConnect is started" checked="false" disabled="false" OnPress="AutoConnectOnStart_OnPress" OnPressID="AutoConnectOnStart"/>
+		</row>
+		<row>
+			<checkbox id="MinimizeOnConnect" label="Minimize AnyConnect on VPN connect" checked="true" disabled="false" OnPress="MinimizeOnConnect_OnPress" OnPressID="MinimizeOnConnect"/>
+		</row>
+		<row>
+			<checkbox id="LocalLanAccess" label="Allow local (LAN) access when using VPN (if configured)" checked="false" disabled="false" OnPress="LocalLanAccess_OnPress" OnPressID="LocalLanAccess"/>
+		</row>
+		<row>
+			<checkbox id="DisableCaptivePortalDetection" label="Disable Captive Portal Detection" checked="true" disabled="false" OnPress="DisableCaptivePortalDetection_OnPress" OnPressID="DisableCaptivePortalDetection"/>
+		</row>
+		<row>
+			<checkbox id="EnableAutomaticServerSelection" label="Enable automatic VPN server selection" checked="false" disabled="false" OnPress="EnableAutomaticServerSelection_OnPress" OnPressID="EnableAutomaticServerSelection"/>
+		</row>
+		<row>
+			<checkbox id="BlockUntrustedServers" label="Block connections to untrusted servers" checked="true" disabled="false" OnPress="BlockUntrustedServers_OnPress" OnPressID="BlockUntrustedServers"/>
+		</row>
+	</preferences>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:13:02">
+	<label id="simple_status" value="Verify your network connection." tooltip="Verify your network connection."/>
+	<button id="simple_action_btn" label="Connect" disabled="false"/>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<label id="simple_substatus_full" value="No Network Connectivity"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" tag="stat_update" timestamp="01-10-2021 15:13:02">
+	<outlinelistbox id="stat_outlinelistbox" updaterows="true" num_columns="2">
+		<listgroup id="group_connection_info">
+			<listrowcolumn label="Connection Information"/>
+			<listrow id="id_stat_state">
+				<listrowcolumn label="State:"/>
+				<listrowcolumn label="Disconnected"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v4">
+				<listrowcolumn label="Tunnel Mode (IPv4):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v6">
+				<listrowcolumn label="Tunnel Mode (IPv6):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_dyn_exc">
+				<listrowcolumn label="Dynamic Tunnel Exclusion:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_dyn_inc">
+				<listrowcolumn label="Dynamic Tunnel Inclusion:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_time_connected">
+				<listrowcolumn label="Duration:"/>
+				<listrowcolumn label="00:00:00"/>
+			</listrow>
+			<listrow id="id_session_disconnect">
+				<listrowcolumn label="Session Disconnect:"/>
+				<listrowcolumn label="None"/>
+			</listrow>
+			<listrow id="id_stat_mgmt_tun_state">
+				<listrowcolumn label="Management Connection State:"/>
+				<listrowcolumn label="Disconnected (disabled)"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_addr_info">
+			<listrowcolumn label="Address Information"/>
+			<listrow id="id_client_addr_ipv4">
+				<listrowcolumn label="Client (IPv4):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_client_addr_ipv6">
+				<listrowcolumn label="Client (IPv6):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_server_addr">
+				<listrowcolumn label="Server:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_bytes">
+			<listrowcolumn label="Bytes"/>
+			<listrow id="id_bytes_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_bytes_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_frames">
+			<listrowcolumn label="Frames"/>
+			<listrow id="id_frames_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_frames_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_ctrl_frames">
+			<listrowcolumn label="Control Frames"/>
+			<listrow id="id_ctrl_frames_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_ctrl_frames_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_client_mgmt">
+			<listrowcolumn label="Client Management"/>
+			<listrow id="id_admin_domain">
+				<listrowcolumn label="Administrative Domain:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_profile_name">
+				<listrowcolumn label="Profile Name:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_transport_info">
+			<listrowcolumn label="Transport Information"/>
+			<listrow id="id_protocol">
+				<listrowcolumn label="Protocol:"/>
+				<listrowcolumn label="Unknown"/>
+			</listrow>
+			<listrow id="id_cipher">
+				<listrowcolumn label="Cipher:"/>
+				<listrowcolumn label="Unknown"/>
+			</listrow>
+			<listrow id="id_compression">
+				<listrowcolumn label="Compression:"/>
+				<listrowcolumn label="None"/>
+			</listrow>
+			<listrow id="id_proxy_addr">
+				<listrowcolumn label="Proxy Address:"/>
+				<listrowcolumn label="No Proxy"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_feature_config">
+			<listrowcolumn label="Feature Configuration"/>
+			<listrow id="id_fips_mode">
+				<listrowcolumn label="FIPS Mode:"/>
+				<listrowcolumn label="Disabled"/>
+			</listrow>
+			<listrow id="id_tnd_mode">
+				<listrowcolumn label="Trusted Network Detection:"/>
+				<listrowcolumn label="Enabled"/>
+			</listrow>
+			<listrow id="id_always_on_mode">
+				<listrowcolumn label="Always On:"/>
+				<listrowcolumn label="Disabled"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_sms">
+			<listrowcolumn label="Secure Mobility Solution"/>
+			<listrow id="id_secure_mobility_soln_status">
+				<listrowcolumn label="Status:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_secure_mobility_soln_appl">
+				<listrowcolumn label="Appliance:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+	</outlinelistbox>
+	<outlinelistbox id="routes_outlinelistbox" updaterows="false" num_columns="1"/>
+	<outlinelistbox id="firewall_outlinelistbox" updaterows="false" num_columns="6">
+		<listhead>
+			<listheader label="Interface"/>
+			<listheader label="Permission"/>
+			<listheader label="Protocol"/>
+			<listheader label="Src Port"/>
+			<listheader label="Dst Port"/>
+			<listheader label="Destination Address"/>
+		</listhead>
+	</outlinelistbox>
+	<outlinelistbox id="overview_stat_outlinelistbox" updaterows="true" num_columns="2">
+		<listgroup id="group_vpn">
+			<listrowcolumn label="VPN (Disconnected)"/>
+			<listrow id="id_bytes_sent">
+				<listrowcolumn label="Bytes Sent: "/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_bytes_recv">
+				<listrowcolumn label="Bytes Received: "/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_time_connected">
+				<listrowcolumn label="Time Connected: "/>
+				<listrowcolumn label="00:00:00"/>
+			</listrow>
+			<listrow id="id_session_disconnect">
+				<listrowcolumn label="Session Disconnect: "/>
+				<listrowcolumn label="None"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v4">
+				<listrowcolumn label="Client Address (IPv4): "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v6">
+				<listrowcolumn label="Client Address (IPv6): "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_server_addr">
+				<listrowcolumn label="Server Address: "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+	</outlinelistbox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:13:02" state="Neutral">
+	<button id="stat_reset_btn" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="false"/>
+	<button id="simple_action_btn" label="Connect" disabled="false" focus="true"/>
+	<combobox id="simple_headend_combobox" disabled="false" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<application disableQuit="false"/>
+	<preferences>
+		<row>
+			<checkbox id="AutoConnectOnStart" label="Start VPN when AnyConnect is started" checked="false" disabled="false" OnPress="AutoConnectOnStart_OnPress" OnPressID="AutoConnectOnStart"/>
+		</row>
+		<row>
+			<checkbox id="MinimizeOnConnect" label="Minimize AnyConnect on VPN connect" checked="true" disabled="false" OnPress="MinimizeOnConnect_OnPress" OnPressID="MinimizeOnConnect"/>
+		</row>
+		<row>
+			<checkbox id="LocalLanAccess" label="Allow local (LAN) access when using VPN (if configured)" checked="false" disabled="false" OnPress="LocalLanAccess_OnPress" OnPressID="LocalLanAccess"/>
+		</row>
+		<row>
+			<checkbox id="DisableCaptivePortalDetection" label="Disable Captive Portal Detection" checked="true" disabled="false" OnPress="DisableCaptivePortalDetection_OnPress" OnPressID="DisableCaptivePortalDetection"/>
+		</row>
+		<row>
+			<checkbox id="EnableAutomaticServerSelection" label="Enable automatic VPN server selection" checked="false" disabled="false" OnPress="EnableAutomaticServerSelection_OnPress" OnPressID="EnableAutomaticServerSelection"/>
+		</row>
+		<row>
+			<checkbox id="BlockUntrustedServers" label="Block connections to untrusted servers" checked="true" disabled="false" OnPress="BlockUntrustedServers_OnPress" OnPressID="BlockUntrustedServers"/>
+		</row>
+	</preferences>
+	<label id="simple_substatus_full" value=""/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:13:02">
+	<label id="simple_status" value="Ready to connect." tooltip="Ready to connect." sensitive="false"/>
+	<log messagehistory="Ready to connect." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:27:11" state="Neutral">
+	<button id="stat_reset_btn" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="false"/>
+	<button id="simple_action_btn" label="Connect" disabled="false" focus="true"/>
+	<combobox id="simple_headend_combobox" disabled="false" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<application disableQuit="false"/>
+	<preferences>
+		<row>
+			<checkbox id="AutoConnectOnStart" label="Start VPN when AnyConnect is started" checked="false" disabled="false" OnPress="AutoConnectOnStart_OnPress" OnPressID="AutoConnectOnStart"/>
+		</row>
+		<row>
+			<checkbox id="MinimizeOnConnect" label="Minimize AnyConnect on VPN connect" checked="true" disabled="false" OnPress="MinimizeOnConnect_OnPress" OnPressID="MinimizeOnConnect"/>
+		</row>
+		<row>
+			<checkbox id="LocalLanAccess" label="Allow local (LAN) access when using VPN (if configured)" checked="false" disabled="false" OnPress="LocalLanAccess_OnPress" OnPressID="LocalLanAccess"/>
+		</row>
+		<row>
+			<checkbox id="DisableCaptivePortalDetection" label="Disable Captive Portal Detection" checked="true" disabled="false" OnPress="DisableCaptivePortalDetection_OnPress" OnPressID="DisableCaptivePortalDetection"/>
+		</row>
+		<row>
+			<checkbox id="EnableAutomaticServerSelection" label="Enable automatic VPN server selection" checked="false" disabled="false" OnPress="EnableAutomaticServerSelection_OnPress" OnPressID="EnableAutomaticServerSelection"/>
+		</row>
+		<row>
+			<checkbox id="BlockUntrustedServers" label="Block connections to untrusted servers" checked="true" disabled="false" OnPress="BlockUntrustedServers_OnPress" OnPressID="BlockUntrustedServers"/>
+		</row>
+	</preferences>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:27:11">
+	<label id="simple_status" value="Verify your network connection." tooltip="Verify your network connection."/>
+	<button id="simple_action_btn" label="Connect" disabled="false"/>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<label id="simple_substatus_full" value="No Network Connectivity"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:27:15" state="Neutral">
+	<button id="stat_reset_btn" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="false"/>
+	<button id="simple_action_btn" label="Connect" disabled="false" focus="true"/>
+	<combobox id="simple_headend_combobox" disabled="false" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<application disableQuit="false"/>
+	<preferences>
+		<row>
+			<checkbox id="AutoConnectOnStart" label="Start VPN when AnyConnect is started" checked="false" disabled="false" OnPress="AutoConnectOnStart_OnPress" OnPressID="AutoConnectOnStart"/>
+		</row>
+		<row>
+			<checkbox id="MinimizeOnConnect" label="Minimize AnyConnect on VPN connect" checked="true" disabled="false" OnPress="MinimizeOnConnect_OnPress" OnPressID="MinimizeOnConnect"/>
+		</row>
+		<row>
+			<checkbox id="LocalLanAccess" label="Allow local (LAN) access when using VPN (if configured)" checked="false" disabled="false" OnPress="LocalLanAccess_OnPress" OnPressID="LocalLanAccess"/>
+		</row>
+		<row>
+			<checkbox id="DisableCaptivePortalDetection" label="Disable Captive Portal Detection" checked="true" disabled="false" OnPress="DisableCaptivePortalDetection_OnPress" OnPressID="DisableCaptivePortalDetection"/>
+		</row>
+		<row>
+			<checkbox id="EnableAutomaticServerSelection" label="Enable automatic VPN server selection" checked="false" disabled="false" OnPress="EnableAutomaticServerSelection_OnPress" OnPressID="EnableAutomaticServerSelection"/>
+		</row>
+		<row>
+			<checkbox id="BlockUntrustedServers" label="Block connections to untrusted servers" checked="true" disabled="false" OnPress="BlockUntrustedServers_OnPress" OnPressID="BlockUntrustedServers"/>
+		</row>
+	</preferences>
+	<label id="simple_substatus_full" value=""/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:27:15">
+	<label id="simple_status" value="Network error. Unable to lookup host names." tooltip="Network error. Unable to lookup host names."/>
+	<button id="simple_action_btn" label="Connect" disabled="false"/>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<label id="simple_substatus_full" value="Limited Access - DNS Failure"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:27:21" state="Neutral">
+	<button id="stat_reset_btn" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="false"/>
+	<button id="simple_action_btn" label="Connect" disabled="false" focus="true"/>
+	<combobox id="simple_headend_combobox" disabled="false" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<application disableQuit="false"/>
+	<preferences>
+		<row>
+			<checkbox id="AutoConnectOnStart" label="Start VPN when AnyConnect is started" checked="false" disabled="false" OnPress="AutoConnectOnStart_OnPress" OnPressID="AutoConnectOnStart"/>
+		</row>
+		<row>
+			<checkbox id="MinimizeOnConnect" label="Minimize AnyConnect on VPN connect" checked="true" disabled="false" OnPress="MinimizeOnConnect_OnPress" OnPressID="MinimizeOnConnect"/>
+		</row>
+		<row>
+			<checkbox id="LocalLanAccess" label="Allow local (LAN) access when using VPN (if configured)" checked="false" disabled="false" OnPress="LocalLanAccess_OnPress" OnPressID="LocalLanAccess"/>
+		</row>
+		<row>
+			<checkbox id="DisableCaptivePortalDetection" label="Disable Captive Portal Detection" checked="true" disabled="false" OnPress="DisableCaptivePortalDetection_OnPress" OnPressID="DisableCaptivePortalDetection"/>
+		</row>
+		<row>
+			<checkbox id="EnableAutomaticServerSelection" label="Enable automatic VPN server selection" checked="false" disabled="false" OnPress="EnableAutomaticServerSelection_OnPress" OnPressID="EnableAutomaticServerSelection"/>
+		</row>
+		<row>
+			<checkbox id="BlockUntrustedServers" label="Block connections to untrusted servers" checked="true" disabled="false" OnPress="BlockUntrustedServers_OnPress" OnPressID="BlockUntrustedServers"/>
+		</row>
+	</preferences>
+	<label id="simple_substatus_full" value=""/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:27:21">
+	<label id="simple_status" value="Ready to connect." tooltip="Ready to connect." sensitive="false"/>
+	<log messagehistory="Ready to connect." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:52:54" state="Transition">
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="true"/>
+	<combobox id="simple_headend_combobox" disabled="true"/>
+	<checkbox id="AutoConnectOnStart" disabled="true"/>
+	<checkbox id="MinimizeOnConnect" disabled="true"/>
+	<checkbox id="LocalLanAccess" disabled="true"/>
+	<checkbox id="DisableCaptivePortalDetection" disabled="true"/>
+	<checkbox id="EnableAutomaticServerSelection" disabled="true"/>
+	<checkbox id="BlockUntrustedServers" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:52:54">
+	<combobox id="simple_headend_combobox" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:52:54">
+	<label id="simple_status" value="Contacting IN INDC (NGVPN20)." tooltip="Contacting IN INDC (NGVPN20)." sensitive="false"/>
+	<log messagehistory="Contacting IN INDC (NGVPN20)." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" tag="stat_update" timestamp="01-10-2021 15:53:02">
+	<outlinelistbox id="stat_outlinelistbox" updaterows="true" num_columns="2">
+		<listgroup id="group_connection_info">
+			<listrowcolumn label="Connection Information"/>
+			<listrow id="id_stat_state">
+				<listrowcolumn label="State:"/>
+				<listrowcolumn label="Disconnected"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v4">
+				<listrowcolumn label="Tunnel Mode (IPv4):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v6">
+				<listrowcolumn label="Tunnel Mode (IPv6):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_dyn_exc">
+				<listrowcolumn label="Dynamic Tunnel Exclusion:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_dyn_inc">
+				<listrowcolumn label="Dynamic Tunnel Inclusion:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_time_connected">
+				<listrowcolumn label="Duration:"/>
+				<listrowcolumn label="00:00:00"/>
+			</listrow>
+			<listrow id="id_session_disconnect">
+				<listrowcolumn label="Session Disconnect:"/>
+				<listrowcolumn label="None"/>
+			</listrow>
+			<listrow id="id_stat_mgmt_tun_state">
+				<listrowcolumn label="Management Connection State:"/>
+				<listrowcolumn label="Disconnected (disabled)"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_addr_info">
+			<listrowcolumn label="Address Information"/>
+			<listrow id="id_client_addr_ipv4">
+				<listrowcolumn label="Client (IPv4):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_client_addr_ipv6">
+				<listrowcolumn label="Client (IPv6):"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_server_addr">
+				<listrowcolumn label="Server:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_bytes">
+			<listrowcolumn label="Bytes"/>
+			<listrow id="id_bytes_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_bytes_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_frames">
+			<listrowcolumn label="Frames"/>
+			<listrow id="id_frames_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_frames_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_ctrl_frames">
+			<listrowcolumn label="Control Frames"/>
+			<listrow id="id_ctrl_frames_sent">
+				<listrowcolumn label="Sent:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_ctrl_frames_recv">
+				<listrowcolumn label="Received:"/>
+				<listrowcolumn label="0"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_client_mgmt">
+			<listrowcolumn label="Client Management"/>
+			<listrow id="id_admin_domain">
+				<listrowcolumn label="Administrative Domain:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_profile_name">
+				<listrowcolumn label="Profile Name:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_transport_info">
+			<listrowcolumn label="Transport Information"/>
+			<listrow id="id_protocol">
+				<listrowcolumn label="Protocol:"/>
+			</listrow>
+			<listrow id="id_cipher">
+				<listrowcolumn label="Cipher:"/>
+			</listrow>
+			<listrow id="id_compression">
+				<listrowcolumn label="Compression:"/>
+			</listrow>
+			<listrow id="id_proxy_addr">
+				<listrowcolumn label="Proxy Address:"/>
+				<listrowcolumn label="No Proxy"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_feature_config">
+			<listrowcolumn label="Feature Configuration"/>
+			<listrow id="id_fips_mode">
+				<listrowcolumn label="FIPS Mode:"/>
+				<listrowcolumn label="Disabled"/>
+			</listrow>
+			<listrow id="id_tnd_mode">
+				<listrowcolumn label="Trusted Network Detection:"/>
+				<listrowcolumn label="Enabled"/>
+			</listrow>
+			<listrow id="id_always_on_mode">
+				<listrowcolumn label="Always On:"/>
+				<listrowcolumn label="Disabled"/>
+			</listrow>
+		</listgroup>
+		<listgroup id="group_sms">
+			<listrowcolumn label="Secure Mobility Solution"/>
+			<listrow id="id_secure_mobility_soln_status">
+				<listrowcolumn label="Status:"/>
+				<listrowcolumn label="Unconfirmed"/>
+			</listrow>
+			<listrow id="id_secure_mobility_soln_appl">
+				<listrowcolumn label="Appliance:"/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+	</outlinelistbox>
+	<outlinelistbox id="routes_outlinelistbox" updaterows="false" num_columns="1"/>
+	<outlinelistbox id="firewall_outlinelistbox" updaterows="false" num_columns="6">
+		<listhead>
+			<listheader label="Interface"/>
+			<listheader label="Permission"/>
+			<listheader label="Protocol"/>
+			<listheader label="Src Port"/>
+			<listheader label="Dst Port"/>
+			<listheader label="Destination Address"/>
+		</listhead>
+	</outlinelistbox>
+	<outlinelistbox id="overview_stat_outlinelistbox" updaterows="true" num_columns="2">
+		<listgroup id="group_vpn">
+			<listrowcolumn label="VPN (Disconnected)"/>
+			<listrow id="id_bytes_sent">
+				<listrowcolumn label="Bytes Sent: "/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_bytes_recv">
+				<listrowcolumn label="Bytes Received: "/>
+				<listrowcolumn label="0"/>
+			</listrow>
+			<listrow id="id_time_connected">
+				<listrowcolumn label="Time Connected: "/>
+				<listrowcolumn label="00:00:00"/>
+			</listrow>
+			<listrow id="id_session_disconnect">
+				<listrowcolumn label="Session Disconnect: "/>
+				<listrowcolumn label="None"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v4">
+				<listrowcolumn label="Client Address (IPv4): "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_tunnel_mode_v6">
+				<listrowcolumn label="Client Address (IPv6): "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+			<listrow id="id_server_addr">
+				<listrowcolumn label="Server Address: "/>
+				<listrowcolumn label="Not Available"/>
+			</listrow>
+		</listgroup>
+	</outlinelistbox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:03">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:03" state="Attention">
+	<label id="simple_status" value="Please enter your username and password." tooltip="Please enter your username and password."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:03">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:53:03" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Please enter your username and password."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:53:14" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:14">
+	<log messagehistory="User credentials entered."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:15">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:15" state="Attention">
+	<label id="simple_status" value="Login failed." tooltip="Login failed."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:15">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:53:15" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Login failed."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:53:25" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:25">
+	<log messagehistory="User credentials entered."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:25">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:25" state="Attention">
+	<label id="simple_status" value="Login failed." tooltip="Login failed."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:25">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:53:25" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Login failed."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:53:51" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:51">
+	<log messagehistory="User credentials entered."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:51">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:51" state="Attention">
+	<label id="simple_status" value="Login failed." tooltip="Login failed."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:53:51">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:53:51" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Login failed."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:01" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:01">
+	<log messagehistory="User credentials prompt cancelled."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:01" state="Neutral">
+	<button id="stat_reset_btn" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="false"/>
+	<button id="simple_action_btn" label="Connect" disabled="false" focus="true"/>
+	<combobox id="simple_headend_combobox" disabled="false" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<application disableQuit="false"/>
+	<preferences>
+		<row>
+			<checkbox id="UseStartBeforeLogon" label="Start VPN before user logon to computer" checked="true" disabled="false" OnPress="UseStartBeforeLogon_OnPress" OnPressID="UseStartBeforeLogon"/>
+		</row>
+		<row>
+			<checkbox id="AutomaticCertSelection" label="Enable automatic certificate selection" checked="false" disabled="false" OnPress="AutomaticCertSelection_OnPress" OnPressID="AutomaticCertSelection"/>
+		</row>
+		<row>
+			<checkbox id="AutoConnectOnStart" label="Start VPN when AnyConnect is started" checked="false" disabled="false" OnPress="AutoConnectOnStart_OnPress" OnPressID="AutoConnectOnStart"/>
+		</row>
+		<row>
+			<checkbox id="MinimizeOnConnect" label="Minimize AnyConnect on VPN connect" checked="true" disabled="false" OnPress="MinimizeOnConnect_OnPress" OnPressID="MinimizeOnConnect"/>
+		</row>
+		<row>
+			<checkbox id="LocalLanAccess" label="Allow local (LAN) access when using VPN (if configured)" checked="true" disabled="false" OnPress="LocalLanAccess_OnPress" OnPressID="LocalLanAccess"/>
+		</row>
+		<row>
+			<checkbox id="DisableCaptivePortalDetection" label="Disable Captive Portal Detection" checked="true" disabled="false" OnPress="DisableCaptivePortalDetection_OnPress" OnPressID="DisableCaptivePortalDetection"/>
+		</row>
+		<row>
+			<checkbox id="AutoReconnect" label="Enable automatic VPN reconnect" checked="false" disabled="false" OnPress="AutoReconnect_OnPress" OnPressID="AutoReconnect"/>
+		</row>
+		<row>
+			<label id="AutoReconnectBehavior_lbl" value="Upon waking from sleep mode:" disabled="true" class="pref-indent"/>
+			<combobox id="AutoReconnectBehavior" editable="false" disabled="true" OnSelect="AutoReconnectBehavior_OnSelect" OnSelectID="AutoReconnectBehavior">
+				<comboitem label="Do not reconnect"/>
+				<comboitem label="Reconnect" selected="true"/>
+			</combobox>
+		</row>
+		<row>
+			<checkbox id="EnableAutomaticServerSelection" label="Enable automatic VPN server selection" checked="false" disabled="false" OnPress="EnableAutomaticServerSelection_OnPress" OnPressID="EnableAutomaticServerSelection"/>
+		</row>
+		<row>
+			<checkbox id="BlockUntrustedServers" label="Block connections to untrusted servers" checked="true" disabled="false" OnPress="BlockUntrustedServers_OnPress" OnPressID="BlockUntrustedServers"/>
+		</row>
+	</preferences>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:01">
+	<label id="simple_status" value="Ready to connect." tooltip="Ready to connect." sensitive="false"/>
+	<log messagehistory="Ready to connect." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:05" state="Transition">
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="true"/>
+	<combobox id="simple_headend_combobox" disabled="true"/>
+	<checkbox id="UseStartBeforeLogon" disabled="true"/>
+	<checkbox id="AutomaticCertSelection" disabled="true"/>
+	<checkbox id="AutoConnectOnStart" disabled="true"/>
+	<checkbox id="MinimizeOnConnect" disabled="true"/>
+	<checkbox id="LocalLanAccess" disabled="true"/>
+	<checkbox id="DisableCaptivePortalDetection" disabled="true"/>
+	<checkbox id="AutoReconnect" disabled="true"/>
+	<label id="AutoReconnectBehavior_lbl" disabled="true"/>
+	<combobox id="AutoReconnectBehavior" disabled="true"/>
+	<checkbox id="EnableAutomaticServerSelection" disabled="true"/>
+	<checkbox id="BlockUntrustedServers" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:05">
+	<combobox id="simple_headend_combobox" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:05">
+	<label id="simple_status" value="Contacting IN INDC (NGVPN20)." tooltip="Contacting IN INDC (NGVPN20)." sensitive="false"/>
+	<log messagehistory="Contacting IN INDC (NGVPN20)." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:06">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:06" state="Attention">
+	<label id="simple_status" value="Please enter your username and password." tooltip="Please enter your username and password."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:06">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:06" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Please enter your username and password."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:18" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:18">
+	<log messagehistory="User credentials entered."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:19">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:19" state="Attention">
+	<label id="simple_status" value="Login failed." tooltip="Login failed."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:19">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:19" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Login failed."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:25">
+	<label id="group_list_lbl" disabled="true"/>
+	<combobox id="group_list" disabled="true"/>
+	<label id="username_lbl" disabled="true"/>
+	<textbox id="username" disabled="true"/>
+	<label id="password_lbl" disabled="true"/>
+	<passwordbox id="password" disabled="true"/>
+	<button id="credential_cancel_btn" disabled="true"/>
+	<button id="credential_ok_btn" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:25">
+	<label id="simple_status" value="Contacting IN INDC (NGVPN20)." tooltip="Contacting IN INDC (NGVPN20)." sensitive="false"/>
+	<log messagehistory="Contacting IN INDC (NGVPN20)." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:25">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:25" state="Attention">
+	<label id="simple_status" value="Please enter your username and password." tooltip="Please enter your username and password."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:25" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:25">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:25" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Please enter your username and password."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:39" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:39">
+	<log messagehistory="User credentials entered."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:40">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:40" state="Attention">
+	<label id="simple_status" value="Login failed." tooltip="Login failed."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:40">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:40" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Login failed."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:44" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:44">
+	<log messagehistory="User credentials prompt cancelled."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:44" state="Neutral">
+	<button id="stat_reset_btn" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="false"/>
+	<button id="simple_action_btn" label="Connect" disabled="false" focus="true"/>
+	<combobox id="simple_headend_combobox" disabled="false" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<application disableQuit="false"/>
+	<preferences>
+		<row>
+			<checkbox id="UseStartBeforeLogon" label="Start VPN before user logon to computer" checked="true" disabled="false" OnPress="UseStartBeforeLogon_OnPress" OnPressID="UseStartBeforeLogon"/>
+		</row>
+		<row>
+			<checkbox id="AutomaticCertSelection" label="Enable automatic certificate selection" checked="false" disabled="false" OnPress="AutomaticCertSelection_OnPress" OnPressID="AutomaticCertSelection"/>
+		</row>
+		<row>
+			<checkbox id="AutoConnectOnStart" label="Start VPN when AnyConnect is started" checked="false" disabled="false" OnPress="AutoConnectOnStart_OnPress" OnPressID="AutoConnectOnStart"/>
+		</row>
+		<row>
+			<checkbox id="MinimizeOnConnect" label="Minimize AnyConnect on VPN connect" checked="true" disabled="false" OnPress="MinimizeOnConnect_OnPress" OnPressID="MinimizeOnConnect"/>
+		</row>
+		<row>
+			<checkbox id="LocalLanAccess" label="Allow local (LAN) access when using VPN (if configured)" checked="true" disabled="false" OnPress="LocalLanAccess_OnPress" OnPressID="LocalLanAccess"/>
+		</row>
+		<row>
+			<checkbox id="DisableCaptivePortalDetection" label="Disable Captive Portal Detection" checked="true" disabled="false" OnPress="DisableCaptivePortalDetection_OnPress" OnPressID="DisableCaptivePortalDetection"/>
+		</row>
+		<row>
+			<checkbox id="AutoReconnect" label="Enable automatic VPN reconnect" checked="false" disabled="false" OnPress="AutoReconnect_OnPress" OnPressID="AutoReconnect"/>
+		</row>
+		<row>
+			<label id="AutoReconnectBehavior_lbl" value="Upon waking from sleep mode:" disabled="true" class="pref-indent"/>
+			<combobox id="AutoReconnectBehavior" editable="false" disabled="true" OnSelect="AutoReconnectBehavior_OnSelect" OnSelectID="AutoReconnectBehavior">
+				<comboitem label="Do not reconnect"/>
+				<comboitem label="Reconnect" selected="true"/>
+			</combobox>
+		</row>
+		<row>
+			<checkbox id="EnableAutomaticServerSelection" label="Enable automatic VPN server selection" checked="false" disabled="false" OnPress="EnableAutomaticServerSelection_OnPress" OnPressID="EnableAutomaticServerSelection"/>
+		</row>
+		<row>
+			<checkbox id="BlockUntrustedServers" label="Block connections to untrusted servers" checked="true" disabled="false" OnPress="BlockUntrustedServers_OnPress" OnPressID="BlockUntrustedServers"/>
+		</row>
+	</preferences>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:44">
+	<label id="simple_status" value="Ready to connect." tooltip="Ready to connect." sensitive="false"/>
+	<log messagehistory="Ready to connect." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:46" state="Transition">
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="true"/>
+	<combobox id="simple_headend_combobox" disabled="true"/>
+	<checkbox id="UseStartBeforeLogon" disabled="true"/>
+	<checkbox id="AutomaticCertSelection" disabled="true"/>
+	<checkbox id="AutoConnectOnStart" disabled="true"/>
+	<checkbox id="MinimizeOnConnect" disabled="true"/>
+	<checkbox id="LocalLanAccess" disabled="true"/>
+	<checkbox id="DisableCaptivePortalDetection" disabled="true"/>
+	<checkbox id="AutoReconnect" disabled="true"/>
+	<label id="AutoReconnectBehavior_lbl" disabled="true"/>
+	<combobox id="AutoReconnectBehavior" disabled="true"/>
+	<checkbox id="EnableAutomaticServerSelection" disabled="true"/>
+	<checkbox id="BlockUntrustedServers" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:46">
+	<combobox id="simple_headend_combobox" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:46">
+	<label id="simple_status" value="Contacting IN INDC (NGVPN20)." tooltip="Contacting IN INDC (NGVPN20)." sensitive="false"/>
+	<log messagehistory="Contacting IN INDC (NGVPN20)." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:47">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:47" state="Attention">
+	<label id="simple_status" value="Please enter your username and password." tooltip="Please enter your username and password."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:54:47">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:54:47" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Please enter your username and password."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:55:01" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:55:01">
+	<log messagehistory="User credentials entered."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:55:02">
+	<application show="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:55:02" state="Attention">
+	<label id="simple_status" value="Login failed." tooltip="Login failed."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:55:02">
+	<combobox id="simple_headend_combobox" disabled="true" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:55:02" id="credential_dialog" type="custom">
+		<title value="Cisco AnyConnect | IN INDC (NGVPN20)"/>
+		<layout>
+			<row>
+				<label id="credential_prompt_header" value="Login failed."/>
+			</row>
+			<row>
+				<label id="group_list_lbl" value="Group:" disabled="false" hidden="false"/>
+				<combobox id="group_list" disabled="false" hidden="false" editable="false" audible="Group:" OnSelect="group_list_OnSelect" OnSelectID="group_list,username,password">
+					<comboitem label="Employee"/>
+					<comboitem label="NV-Contractor" selected="true"/>
+					<comboitem label="PARTNER"/>
+					<comboitem label="PSG"/>
+				</combobox>
+			</row>
+			<row>
+				<label id="username_lbl" value="Username:" disabled="false" hidden="false"/>
+				<textbox id="username" value="japaliwal" disabled="false" hidden="false" maxlength="32" audible="Username:" OnPressEnter="username_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<label id="password_lbl" value="Password:" disabled="false" hidden="false"/>
+				<passwordbox id="password" value="" disabled="false" hidden="false" maxlength="40" audible="Password:" focus="true" OnPressEnter="password_OnPressEnter" OnPressEnterID="group_list,username,password"/>
+			</row>
+			<row>
+				<button id="credential_ok_btn" label="OK" OnPress="credential_ok_btn_OnPress" OnPressID="group_list,username,password"/>
+				<button id="credential_cancel_btn" label="Cancel" OnPress="credential_cancel_btn_OnPress"/>
+			</row>
+		</layout>
+		<closebutton id="credential_close" OnClose="credential_close_OnClose"/>
+	</popup>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="popup">
+	<popup timestamp="01-10-2021 15:55:04" id="credential_dialog" dispose="true"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:55:04">
+	<log messagehistory="User credentials prompt cancelled."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:55:04" state="Neutral">
+	<button id="stat_reset_btn" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="false"/>
+	<button id="simple_action_btn" label="Connect" disabled="false" focus="true"/>
+	<combobox id="simple_headend_combobox" disabled="false" editable="true">
+		<comboitem label="Please select a gateway."/>
+		<comboitem label="IN INDC (NGVPN20)" selected="true"/>
+		<comboitem label="EU UKDC (NGVPN10)"/>
+		<comboitem label="EU Berlin (NGVPN13)"/>
+		<comboitem label="EU Moscow (NGVPN16)"/>
+		<comboitem label="EU Helsinki (NGVPN19)"/>
+		<comboitem label="CN HKDC (NGVPN30)"/>
+		<comboitem label="CN Beijing (NGVPN31)"/>
+		<comboitem label="CN Zhangjiang (NGVPN32)"/>
+		<comboitem label="CN Shenzhen (NGVPN33)"/>
+		<comboitem label="TW Taipei (NGVPN34)"/>
+		<comboitem label="TW HsinChu (NGVPN35)"/>
+		<comboitem label="KR Seoul (NGVPN36)"/>
+		<comboitem label="JP Tokyo (NGVPN37)"/>
+		<comboitem label="US Santa Clara (NGVPN01)"/>
+		<comboitem label="US Austin (NGVPN03)"/>
+		<comboitem label="US Durham (NGVPN04)"/>
+		<comboitem label="US Westford (NGVPN05)"/>
+		<comboitem label="IN Pune (NGVPN21)"/>
+		<comboitem label="US Redmond (NGVPN06)"/>
+		<comboitem label="US Beaverton (NGVPN07)"/>
+		<comboitem label="EU Wurselen (NGVPN11)"/>
+		<comboitem label="CAN Toronto (NGVPN08)"/>
+		<comboitem label="EU Zurich (NGVPN12)"/>
+		<comboitem label="US Santa Clara (NGVPN02)"/>
+		<comboitem label="IN INDC (NGVPN22)"/>
+		<comboitem label="IN Pune (NGVPN23)"/>
+		<comboitem label="IN Hyderabad (NGVPN25)"/>
+		<comboitem label="US St. Louis (NGVPN09)"/>
+		<comboitem label="EU Munich (NGVPN14)"/>
+		<comboitem label="US Reno (NGVPN50)"/>
+	</combobox>
+	<label id="simple_substatus_left" value=""/>
+	<label id="simple_substatus_right" value=""/>
+	<application disableQuit="false"/>
+	<preferences>
+		<row>
+			<checkbox id="UseStartBeforeLogon" label="Start VPN before user logon to computer" checked="true" disabled="false" OnPress="UseStartBeforeLogon_OnPress" OnPressID="UseStartBeforeLogon"/>
+		</row>
+		<row>
+			<checkbox id="AutomaticCertSelection" label="Enable automatic certificate selection" checked="false" disabled="false" OnPress="AutomaticCertSelection_OnPress" OnPressID="AutomaticCertSelection"/>
+		</row>
+		<row>
+			<checkbox id="AutoConnectOnStart" label="Start VPN when AnyConnect is started" checked="false" disabled="false" OnPress="AutoConnectOnStart_OnPress" OnPressID="AutoConnectOnStart"/>
+		</row>
+		<row>
+			<checkbox id="MinimizeOnConnect" label="Minimize AnyConnect on VPN connect" checked="true" disabled="false" OnPress="MinimizeOnConnect_OnPress" OnPressID="MinimizeOnConnect"/>
+		</row>
+		<row>
+			<checkbox id="LocalLanAccess" label="Allow local (LAN) access when using VPN (if configured)" checked="true" disabled="false" OnPress="LocalLanAccess_OnPress" OnPressID="LocalLanAccess"/>
+		</row>
+		<row>
+			<checkbox id="DisableCaptivePortalDetection" label="Disable Captive Portal Detection" checked="true" disabled="false" OnPress="DisableCaptivePortalDetection_OnPress" OnPressID="DisableCaptivePortalDetection"/>
+		</row>
+		<row>
+			<checkbox id="AutoReconnect" label="Enable automatic VPN reconnect" checked="false" disabled="false" OnPress="AutoReconnect_OnPress" OnPressID="AutoReconnect"/>
+		</row>
+		<row>
+			<label id="AutoReconnectBehavior_lbl" value="Upon waking from sleep mode:" disabled="true" class="pref-indent"/>
+			<combobox id="AutoReconnectBehavior" editable="false" disabled="true" OnSelect="AutoReconnectBehavior_OnSelect" OnSelectID="AutoReconnectBehavior">
+				<comboitem label="Do not reconnect"/>
+				<comboitem label="Reconnect" selected="true"/>
+			</combobox>
+		</row>
+		<row>
+			<checkbox id="EnableAutomaticServerSelection" label="Enable automatic VPN server selection" checked="false" disabled="false" OnPress="EnableAutomaticServerSelection_OnPress" OnPressID="EnableAutomaticServerSelection"/>
+		</row>
+		<row>
+			<checkbox id="BlockUntrustedServers" label="Block connections to untrusted servers" checked="true" disabled="false" OnPress="BlockUntrustedServers_OnPress" OnPressID="BlockUntrustedServers"/>
+		</row>
+	</preferences>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 15:55:04">
+	<label id="simple_status" value="Ready to connect." tooltip="Ready to connect." sensitive="false"/>
+	<log messagehistory="Ready to connect." sensitive="false"/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="update" timestamp="01-10-2021 16:23:09" state="Error">
+	<label id="simple_status" value="Exiting.  Service was stopped." tooltip="Exiting.  Service was stopped."/>
+	<button id="simple_action_btn" label="Connect" disabled="true"/>
+	<menuitem id="vpn_connect_toggle_menu_item" label="Connect" disabled="true"/>
+	<combobox id="simple_headend_combobox" disabled="true"/>
+	<log messagehistory="Exiting.  Service was stopped."/>
+</acguiNotice>
+
+<acguiNotice module="com.cisco.anyconnect.presentation.vpn" type="quit" timestamp="01-10-2021 16:23:09" exitcode="0"/>
+
