@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/swiggy-landing-page-reactjs-Jaya-Paliwal/static/css/main.1b74666f.css",
+    "main.js": "/swiggy-landing-page-reactjs-Jaya-Paliwal/static/js/main.b7ddee1c.js",
+    "index.html": "/swiggy-landing-page-reactjs-Jaya-Paliwal/index.html",
+    "main.1b74666f.css.map": "/swiggy-landing-page-reactjs-Jaya-Paliwal/static/css/main.1b74666f.css.map",
+    "main.b7ddee1c.js.map": "/swiggy-landing-page-reactjs-Jaya-Paliwal/static/js/main.b7ddee1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b74666f.css",
+    "static/js/main.b7ddee1c.js"
+  ]
+}

@@ -1,0 +1,1534 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+}
+.part1{
+  display: flex;
+  flex-direction: row;
+  height: 40.625rem;
+  width: 100%;
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+ height:9.375rem;
+  justify-content: center;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+  margin-top: 0rem;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+}
+.image{
+width: 45vw;
+}
+.login{
+text-decoration: none;
+cursor: pointer;
+display: inline-block;
+text-align: center;
+border: none;
+line-height: 3.125rem;
+font-size: 1.25rem;
+padding: 0 2rem;
+color: #000;
+letter-spacing: 0;
+font-weight: bolder;
+line-height: 2.5rem;
+width: auto;
+
+}
+.login:hover{
+  color: #fc8019;
+}
+.sign-up{
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  line-height: 3.125rem;
+  padding: 0 2rem;
+  color: #000;
+  letter-spacing: 0;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+  font-size:1.125rem;
+  font-weight: 600;
+  width: auto;
+}
+.side-img{
+  height:40.625rem;
+   width:45vw; 
+}
+.logos{
+  float: left;
+  width: 23.125rem;
+}
+.logo{
+  width: 15rem;
+}
+.btn{
+  float: right;
+}
+.title{
+position: relative;
+display: flex;
+flex-direction: column;
+height: 6.25rem;
+width: 55vw;
+justify-content: center;
+align-items: center;
+margin-bottom: 0rem;
+padding-bottom: 0rem;
+}
+.topic{
+    margin-bottom: 0;
+    font-size:2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.028125rem;
+    margin-left:1rem;
+  }
+  .head{
+    size: 24px;
+          font-weight: 300;
+          width:37.5rem;
+          margin-top: 0;
+          margin-bottom: 2rem;
+          line-height: 2.5rem;
+          letter-spacing:-0.01875rem;
+          color: #686b78;
+          margin-left:1rem;
+  }
+h1{
+  margin: 0.67em 0;
+}
+.input{
+  display: flex;
+  flex-direction: row;
+}
+  input{
+      border: none;
+      width: 23vw;
+      padding-top: 2px;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+      padding-left: 10px;
+      font-size: 18px;
+  }
+  
+  .btns{
+      border: 1px solid  #fc8019;
+      width: 44vw;
+      height: 8vh;
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+  }
+  .locate-me{
+      margin-right: 10px;
+     padding-top: 18px;
+      width: 120px;
+      font-size: 18px;
+  }
+  .food{
+      float: right;
+      width: 154.5px;
+      height: 8vh;
+      background-color: #fc8019;
+      color: white;
+      display: block;
+  }
+  .pp{
+      margin-top: 18px;
+      margin-left: 37px;
+      font-weight: bold;
+      color: white;
+  }
+
+.City{
+  font-weight: 400;
+font-size: 1.0625rem;
+color: #a9abb2;
+margin: 1.875rem 0 0.625rem;
+letter-spacing: -0.0125rem;
+text-transform: uppercase;
+margin-left: 1rem;
+}
+.cities{
+  width: 35.625rem;
+list-style: none;
+padding: 0;
+margin-left: 1rem;
+
+}
+.c1{
+  display: inline-block;
+  padding: 0;
+}
+.c11{
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 8px;
+  color: #686b78;
+  line-height: 1.5;
+  letter-spacing: -.3px;
+  text-decoration: none;
+}
+.c12{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #b5b8c4;
+  line-height: 1.5;
+  letter-spacing: -0.01875rem;
+  text-decoration: none;
+}
+.part2{
+  margin-top:3.125rem;
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(22, 11, 11);
+  position: relative;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  margin: 0;
+}
+.Img1, .Img2, .Img3{
+  width: 30vw;
+ text-align: center;
+}
+.imgs{
+  width: 7.5rem;
+  height: 13.75rem;
+  margin-bottom: 5.125rem;
+}
+h2{
+  color: white;
+  margin-bottom: 1.25rem;
+  width: 16.875rem;
+  margin-left: 6.25rem;
+}
+p{
+  color: rgb(247, 189, 189);
+  margin-bottom: 1.25rem;
+  width: 16.875rem;
+  margin-left: 6.25rem;
+}
+.part3{
+  width: 98%;
+  height: 90.2vh;
+  position: relative;
+   margin: 0rem; 
+   padding: 0rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column; 
+  flex-direction: row;
+  -ms-flex-pack: center;
+   justify-content: center; 
+}
+.information{
+  width: 12.5rem;
+  margin-left: 0rem;
+}
+.h1{
+  width: 17.5rem;
+  font-size: 2.5rem;
+}
+.p{
+  color: gray;
+  margin: 0;
+  font-size: medium;
+  font-size: 1.25rem;
+  width: 22.5rem;
+  margin-bottom:4.375rem;
+}
+.mobileimg{
+  width: 23.125rem;
+  height: 27.5rem;
+  margin-bottom: 11.25rem;
+}
+.mobileimg1{
+  width: 23.125rem;
+  height: 27.5rem;
+  margin-top: 10.625rem;
+}
+.appinfo{
+width:20rem;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.app,.app1{
+    width: 10rem;
+    height: 3.75rem;
+    cursor: pointer;
+}
+.info{
+    margin-left: 9.375rem;
+    width:40vw;
+    margin-top:6.25rem;
+}
+.mobiles{
+    width: 60vw;
+    /* margin-right: 2.375rem; */
+    display: flex;
+    flex-direction:row;
+}
+.part4{
+  height: 400rem;
+  width: 100%;
+  background-color: black;
+  margin-top: 1.0625rem;
+}
+li{
+  color: white;
+  list-style-type: none;
+
+}
+li:hover{
+    font-size: 1.1875rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.R2, .R1{
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+}
+.row3{
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+.row1, .row2, .row3{
+    margin-top: 6.25rem;
+    margin-left: 4.5rem;
+    line-height: 2.1875rem;
+    font-size:1.125rem;
+}
+.headings{
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 15px;
+    color:#a9a9ac;
+}
+.headings1{
+  margin: 0;
+  margin-bottom: 1.875rem;
+  font-weight: bolder;
+  font-size: 0.9375rem;
+  color:#a9a9ac;
+  margin-left: 4.5rem;
+  margin-top:3.75rem;
+}
+.apps, .apps1{
+    width: 10.5rem;
+    height:4.375rem;
+} 
+.apps:hover, .apps1:hover{
+  width:15.625rem;
+  height:4.875rem;
+  cursor: pointer;
+}
+.apps{
+    margin-bottom:2.5rem;
+}
+hr{
+    width:75.25rem;
+    margin-left: 3.5rem;
+   border: 0.0625rem solid rgb(70, 68, 68);
+}
+.R2{
+  margin-top: 3.75rem;
+  margin-left: 4.5rem;
+  line-height:2.1875rem;
+  font-size:1.125rem;
+  text-transform:capitalize;
+}
+.row4, .row5, .row6, .row7{
+    margin-right:14.375rem;
+}
+.swiggy{
+    width:7.375rem;
+    height:3.125rem;
+    cursor: pointer;
+}
+.R3{
+    display: flex;
+    flex-direction: row;
+    margin-top:3.125rem;
+    width: 85vw;
+    margin-left: 0rem;
+    justify-content:space-around;
+}
+.fa1, .fa2, .fa3, .fa4{
+    color: white;
+    margin-left:2.5rem;
+    font-size:1.875rem;
+}
+.fa1:hover, .fa2:hover, .fa3:hover, .fa4:hover{
+  font-size:2rem;
+  cursor: pointer;
+}
+.copy{
+    font-size: 1.375rem;
+    color: white;
+}
+@media  (max-width:375px) {
+    body{
+      width:100%;
+    }
+    .part1{
+        width: 100%;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .heading{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 5rem;
+    }
+  .image{
+  width: 100%;
+  }
+  .btn{
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+  }
+  .login{
+  margin-left: 5rem;
+  width: 5rem;
+  height: 2rem;
+  margin-top: 2rem;
+  
+  }
+  .sign-up{
+      line-height: 1.125rem;
+      margin-left: 2rem;
+      width: 12rem;
+      height: 2.5rem;
+      margin-top: 2rem;
+  }
+  .side-img{
+       width:100%; 
+  }
+  .logos{
+      width: 1rem;
+  }
+  .logo{
+      width: 5rem;
+      height: 2rem;
+      margin-left: 2rem;
+      margin-top: 2rem;
+  }
+  .title{
+  width: 100%;
+  
+  }
+  .topic{
+         font-size:1.5rem;
+        margin-left: 12rem;
+      }
+      .head{
+          font-size:1rem;
+              margin-left: 12rem;
+              width: 100%;
+      }
+  
+  .input{
+      display: flex;
+      flex-direction: row;
+      
+  }
+      input{
+          width: 47.4vw;
+          font-size: 12px;
+      }
+      
+      .btns{
+          width: 80vw;
+          height: 6vh;
+          margin-left: 12rem;
+      }
+      .locate-me{
+         display: none;
+      }
+      .food{
+          width: 120.5px;
+          height: 6vh;
+      }
+      .pp{
+          margin-top: 12px;
+          margin-left: 15px;
+      }
+  
+  .City{
+      width: 100%;
+      margin-left: 12rem;
+  }
+  .cities{
+      width: 64%;
+      margin-left: 12rem;
+  
+  }
+  .c1{
+      display: inline-block;
+      padding: 0;
+  }
+  .c11{
+      font-weight: 600;
+      font-size: 16px;
+      margin-right: 8px;
+      color: #686b78;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+  }
+  .c12{
+      font-weight: 600;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      color: #b5b8c4;
+      line-height: 1.5;
+      letter-spacing: 0.01875rem;
+      text-decoration: none;
+  }
+  .part2{
+      height: 180vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .Img1, .Img2, .Img3{
+      width: 100%;
+     text-align: center;
+    }
+    .imgs{
+      width: 7.5rem;
+      height: 11.75rem;
+    }
+    p, h2{
+      margin-left: 4rem;
+     
+    }
+    .part3{
+      height:122vh;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .information{
+      width: 12.5rem;
+      margin-left: 0rem;
+    }
+    .p{
+      font-size: 1rem;
+      width: 20.5rem;
+    }
+    .info{
+      margin-left: 2rem;
+      width:40vw;
+      margin-top:0rem;
+  }
+    .mobileimg{
+      width: 13.125rem;
+      height: 15.5rem;
+      margin-bottom: 0rem;
+    }
+   
+    .mobileimg1{
+      width: 13.125rem;
+      height: 15.5rem;
+      margin-top: 0rem;
+      float: right;
+      margin-right: 0rem;
+      margin-bottom: 0rem;
+    }
+    .appinfo{
+        margin-bottom: 3rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        width: 15rem;
+    }
+    
+    .app, .app1{
+        width: 7rem;
+    height: 2.75rem;
+}
+   
+    .mobiles{
+        width: 100%;
+        margin-right: 9.375rem;
+        margin-bottom: 0rem;
+    }
+    .part4{
+      height: 1580rem;
+    }
+    
+    .R2, .R1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .apps, .apps1{
+        width: 8.5rem;
+        height:3.375rem;
+    } 
+    .rows{
+        margin-bottom: 2rem;
+    }
+    
+    hr{
+        width:100%;
+       margin-left:0rem;
+    }
+    
+    .swiggy{
+       margin-bottom: 15px;
+    }
+    .R3{
+        display: flex;
+        flex-direction: column;
+        margin-left: 7rem; 
+    }
+    .fa{
+        margin-left:0.3rem;
+    }
+    .copy{
+        margin-left: 0px;
+    }
+}
+
+@media   (min-width:376px) and (max-width:389px) {
+  body{
+    width:100%;
+  }
+  .part1{
+      width: 100%;
+      height: 110vh;
+      display: flex;
+      flex-direction: column;
+  }
+  .heading{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 5rem;
+  }
+.image{
+width: 100%;
+}
+.btn{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.login{
+margin-left: 4rem;
+width: 8rem;
+height: 3rem;
+margin-top: 2rem;
+
+}
+.sign-up{
+    line-height: 1.2rem;
+    margin-left: 3rem;
+    width: 15rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+}
+.side-img{
+     width:100%; 
+}
+.logos{
+    width: 1rem;
+}
+.logo{
+    width: 5.5rem;
+    height: 2.5rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
+.title{
+width: 100%;
+
+}
+.topic{
+       font-size:1.9rem;
+      margin-left: 12rem;
+    }
+    .head{
+        font: size 1.5rem;
+            margin-left: 12rem;
+            width: 100%;
+    }
+
+.input{
+    display: flex;
+    flex-direction: row;
+    
+}
+    input{
+        width: 50.4vw;
+        font-size: 14px;
+    }
+    
+    .btns{
+        width: 80vw;
+        height: 6vh;
+        margin-left: 12rem;
+    }
+    .locate-me{
+       display: none;
+    }
+    .food{
+        width: 120.5px;
+        height: 6vh;
+    }
+    .pp{
+        margin-top: 16px;
+        margin-left: 15px;
+    }
+
+.City{
+    width: 100%;
+    margin-left: 12rem;
+}
+.cities{
+    width: 75%;
+    margin-left: 12rem;
+
+}
+.part2{
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Img1, .Img2, .Img3{
+    width: 100%;
+   text-align: center;
+  }
+  .imgs{
+    width: 7.5rem;
+    height: 11.75rem;
+  }
+  p, h2{
+    margin-left: 6rem;
+   
+  }
+  .part3{
+    height:58.9vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .information{
+    width: 12.5rem;
+    margin-left: 0rem;
+  }
+  .p{
+    font-size: 1rem;
+    width: 21.5rem;
+    margin-bottom: 2rem;
+  }
+  .info{
+    margin-left: 5rem;
+    width:40vw;
+    margin-top:0rem;
+
+}
+  .mobileimg{
+    width: 13.125rem;
+    height: 15.5rem;
+    margin-bottom: 0rem;
+  }
+ 
+  .mobileimg1{
+    width: 13.125rem;
+    height: 15.5rem;
+    margin-top: 0rem;
+    float: right;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+  .appinfo{
+      margin-bottom: 3rem;
+      margin-right: 0rem;
+      margin-left: 0rem;
+      width: 15rem;
+  }
+  
+  .app, .app1{
+      width: 7rem;
+  height: 2.75rem;
+}
+ 
+  .mobiles{
+      width: 100%;
+      margin-right: 9.375rem;
+      margin-bottom: 0rem;
+      height: 28vh;
+      border-top: 2px  solid black;
+      border-bottom: 2px  solid black;
+      padding-left: 30px;
+  }
+  .part4{
+    height: 1580rem;
+    width: 100%; 
+  }
+  .headings1{
+    margin-left: 10rem; 
+  }
+  
+   .R1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6rem; 
+  }
+  .R2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10rem; 
+  }
+  
+  .apps, .apps1{
+      width: 8.5rem;
+      height:3.375rem;
+  } 
+  .rows{
+      margin-bottom: 2rem;
+  }
+  
+  hr{
+      width:100%;
+     margin-left:0rem;
+  }
+  
+  .swiggy{
+     margin-bottom: 15px;
+  }
+  .R3{
+      display: flex;
+      flex-direction: column;
+      margin-left: 10rem; 
+  }
+  .fa{
+      margin-left:0.3rem;
+  }
+  .copy{
+      margin-left: 0px;
+  }
+}
+
+@media   (min-width:390px) and (max-width:416px) {
+  body{
+    width:100%;
+  }
+  .part1{
+      width: 100%;
+      height: 110vh;
+      display: flex;
+      flex-direction: column;
+  }
+  .heading{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 5rem;
+  }
+.image{
+width: 105%;
+}
+.btn{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.login{
+margin-left: 4rem;
+width: 8rem;
+height: 3rem;
+margin-top: 2rem;
+
+}
+.sign-up{
+    line-height: 1.2rem;
+    margin-left: 3rem;
+    width: 15rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+}
+.side-img{
+     width:100%; 
+}
+.logos{
+    width: 1rem;
+}
+.logo{
+    width: 5.5rem;
+    height: 2.5rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
+.title{
+width: 100%;
+
+}
+.topic{
+       font-size:1.9rem;
+      margin-left: 12rem;
+    }
+    .head{
+        font-size: 1.1rem;
+            margin-left: 12rem;
+            width: 100%;
+    }
+
+.input{
+    display: flex;
+    flex-direction: row;
+    
+}
+    input{
+        width: 50.4vw;
+        font-size: 14px;
+    }
+    
+    .btns{
+        width: 80vw;
+        height: 6vh;
+        margin-left: 12rem;
+    }
+    .locate-me{
+       display: none;
+    }
+    .food{
+        width: 120.5px;
+        height: 6vh;
+    }
+    .pp{
+        margin-top: 16px;
+        margin-left: 15px;
+    }
+
+.City{
+    width: 100%;
+    margin-left: 12rem;
+}
+.cities{
+    width: 75%;
+    margin-left: 12rem;
+
+}
+.part2{
+    height: 138vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  width: 105%;
+  }
+  .Img1, .Img2, .Img3{
+    width: 100%;
+   text-align: center;
+  }
+  .imgs{
+    width: 7.5rem;
+    height: 11.75rem;
+  }
+  p, h2{
+    margin-left: 6rem;
+   
+  }
+  .part3{
+    height:62vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .information{
+    width: 12.5rem;
+    margin-left: 0rem;
+  }
+  .p{
+    font-size: 1rem;
+    width: 21.5rem;
+    margin-bottom: 2rem;
+  }
+  .info{
+    margin-left: 5rem;
+    width:40vw;
+    margin-top:0rem;
+
+}
+  .mobileimg{
+    width: 13.125rem;
+    height: 15.5rem;
+    margin-bottom: 0rem;
+  }
+ 
+  .mobileimg1{
+    width: 13.125rem;
+    height: 15.5rem;
+    margin-top: 0rem;
+    float: right;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+  .appinfo{
+      margin-bottom: 3rem;
+      margin-right: 0rem;
+      margin-left: 0rem;
+      width: 15rem;
+  }
+  
+  .app, .app1{
+      width: 7rem;
+  height: 2.75rem;
+}
+ 
+  .mobiles{
+      width: 105%;
+      margin-right: 9.375rem;
+      margin-bottom: 0rem;
+      height: 30vh;
+      border-top: 2px  solid black;
+      border-bottom: 2px  solid black;
+      padding-left: 10px;
+  }
+  .part4{
+    height: 1580rem;
+    width: 105%; 
+  }
+  .headings1{
+    margin-left: 10rem; 
+  }
+  
+   .R1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6rem; 
+  }
+  .R2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10rem; 
+  }
+  
+  .apps, .apps1{
+      width: 8.5rem;
+      height:3.375rem;
+  } 
+  .rows{
+      margin-bottom: 2rem;
+  }
+  
+  hr{
+      width:100%;
+     margin-left:0rem;
+  }
+  
+  .swiggy{
+     margin-bottom: 15px;
+  }
+  .R3{
+      display: flex;
+      flex-direction: column;
+      margin-left: 10rem; 
+  }
+  .fa{
+      margin-left:0.3rem;
+  }
+  .copy{
+      margin-left: 0px;
+  }
+}
+@media   (min-width:416px) and (max-width:818px) {
+  body{
+    width:100%;
+  }
+  .part1{
+      width: 100%;
+      height: 130vh;
+      display: flex;
+      flex-direction: column;
+  }
+  .heading{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 5rem;
+  }
+.image{
+width: 100%;
+}
+.btn{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.login{
+margin-left: 5rem;
+width: 8rem;
+height: 3rem;
+margin-top: 2rem;
+
+}
+.sign-up{
+    line-height: 1.4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 3rem;
+    margin-top: 2rem;
+}
+.side-img{
+     width:100%; 
+}
+.logos{
+    width: 1rem;
+}
+.logo{
+    width: 7rem;
+    height: 3.5rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
+.title{
+width: 100%;
+
+}
+.topic{
+       font-size:1.9rem;
+      margin-left: 12rem;
+    }
+    .head{
+        font: size 1.5rem;
+            margin-left: 12rem;
+            width: 100%;
+    }
+
+.input{
+    display: flex;
+    flex-direction: row;
+    
+}
+    input{
+        width: 57.4vw;
+        font-size: 18px;
+    }
+    
+    .btns{
+        width: 80vw;
+        height: 6vh;
+        margin-left: 12rem;
+    }
+    .locate-me{
+       display: none;
+    }
+    .food{
+        width: 120.5px;
+        height: 6vh;
+    }
+    .pp{
+        margin-top: 12px;
+        margin-left: 15px;
+    }
+
+.City{
+    width: 100%;
+    margin-left: 12rem;
+}
+.cities{
+    width: 79%;
+    margin-left: 12rem;
+
+}
+.part2{
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Img1, .Img2, .Img3{
+    width: 100%;
+   text-align: center;
+  }
+  .imgs{
+    width: 7.5rem;
+    height: 11.75rem;
+  }
+  p, h2{
+    margin-left: 10rem;
+   
+  }
+  .part3{
+    height:73.8vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .information{
+    width: 12.5rem;
+    margin-left: 0rem;
+  }
+  .p{
+    font-size: 1.2rem;
+    width: 23.5rem;
+    margin-bottom: 2rem;
+  }
+  .info{
+    margin-left: 5rem;
+    width:40vw;
+    margin-top:0rem;
+
+}
+  .mobileimg{
+    width: 13.125rem;
+    height: 15.5rem;
+    margin-bottom: 0rem;
+  }
+ 
+  .mobileimg1{
+    width: 13.125rem;
+    height: 15.5rem;
+    margin-top: 0rem;
+    float: right;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+  .appinfo{
+      margin-bottom: 3rem;
+      margin-right: 0rem;
+      margin-left: 0rem;
+      width: 15rem;
+  }
+  
+  .app, .app1{
+      width: 7rem;
+  height: 2.75rem;
+}
+ 
+  .mobiles{
+      width: 100%;
+      margin-right: 9.375rem;
+      margin-bottom: 0rem;
+      height: 35vh;
+      border-top: 2px  solid black;
+      border-bottom: 2px  solid black;
+      padding-left: 50px;
+  }
+  .part4{
+    height: 1513rem;
+    width: 100%; 
+  }
+  .headings1{
+    margin-left: 13rem;
+  }
+  
+   .R1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 9rem; 
+  }
+  .R2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 13rem; 
+  }
+  
+  .apps, .apps1{
+      width: 8.5rem;
+      height:3.375rem;
+  } 
+  .rows{
+      margin-bottom: 2rem;
+  }
+  
+  hr{
+      width:100%;
+     margin-left:0rem;
+  }
+  
+  .swiggy{
+     margin-bottom: 15px;
+  }
+  .R3{
+      display: flex;
+      flex-direction: column;
+      margin-left: 13rem; 
+  }
+  .fa{
+      margin-left:0.3rem;
+  }
+  .copy{
+      margin-left: 0px;
+  }
+}
+
+@media   (min-width:819px) and (max-width:1020px) {
+  body{
+    width:100%;
+  }
+  .part1{
+      width: 100%;
+      height: 84vh;
+      display: flex;
+      flex-direction: column;
+  }
+  .heading{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 5rem;
+  }
+.image{
+width: 100%;
+}
+.btn{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.login{
+margin-left: 9rem;
+width: 8rem;
+height: 3rem;
+margin-top: 2rem;
+font-size: 1.8rem;
+
+}
+.sign-up{
+    line-height: 1.8rem;
+    margin-left: 9.2rem;
+    width: 25rem;
+    height: 3.5rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.side-img{
+     width:100%; 
+}
+.logos{
+    width: 6rem;
+}
+.logo{
+    width: 12rem;
+    height: 4rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
+.Title{
+width: 100%;
+
+}
+.topic{
+       font-size:2.5rem;
+      margin-left: 2rem;
+    }
+    .head{
+        font: size 2.5rem;
+            margin-left: 2rem;
+            width: 100%;
+    }
+
+.input{
+    display: flex;
+    flex-direction: row;
+    
+}
+    input{
+        width: 49.4vw;
+        font-size: 18px;
+    }
+    
+    .btns{
+        width: 80vw;
+        height: 6vh;
+        margin-left: 2rem;
+    }
+    .locate-me{
+      margin-top: 5px;
+    }
+    .food{
+        width: 120.5px;
+        height: 6vh;
+    }
+    .pp{
+        margin-top: 28px;
+        margin-left: 20px;
+    }
+
+.City{
+    width: 100%;
+    margin-left: 2rem;
+}
+.cities{
+    width: 100%;
+    margin-left: 2rem;
+}
+.part2{
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Img1, .Img2, .Img3{
+    width: 100%;
+   text-align: center;
+  }
+  .imgs{
+    width: 7.5rem;
+    height: 11.75rem;
+  }
+  p, h2{
+    margin-left: 18rem;
+   
+  }
+  .part3{
+    height:25vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+  .information{
+    width: 12.5rem;
+    margin-left: 0rem;
+  }
+  .p{
+    font-size: 1.2rem;
+    width: 23.5rem;
+    margin-bottom: 2rem;
+  }
+  .info{
+    margin-left: 10rem;
+    width:50vw;
+    margin-top:0rem;
+
+}
+  .mobileimg{
+    width: 13.125rem;
+    height: 19.5rem;
+    margin-bottom: 0rem;
+    margin-left: 120px;
+  }
+ 
+  .mobileimg1{
+    width: 13.125rem;
+    height: 19.5rem;
+    margin-top: 0rem;
+    float: right;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+  .appinfo{
+      margin-bottom: 3rem;
+      margin-right: 0rem;
+      margin-left: 0rem;
+      width: 15rem;
+  }
+  
+  .app, .app1{
+      width: 7rem;
+  height: 2.75rem;
+}
+ 
+  .mobiles{
+      width: 100%;
+      margin-right: 9.375rem;
+      margin-bottom: 0rem;
+  }
+  .part4{
+    height: 1513rem;
+    width: 100%; 
+  }
+  .headings1{
+    margin-left: 1rem;
+  }
+  
+   .R1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem; 
+    width: 10%;
+    font-size: 1rem;
+    margin-right: 0rem;
+  }
+  .row1, .row2, .row3{
+    margin-right:0;
+    margin-left:0;
+  }
+  .R2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 10rem; 
+    width: 50%;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .apps, .apps1{
+     display: none;
+  } 
+  .rows{
+      margin-bottom: 2rem;
+  }
+  
+  hr{
+      width:100%;
+     margin-left:0rem;
+  }
+  
+  .swiggy{
+     margin-bottom: 15px;
+  }
+  .R3{
+      display: flex;
+      flex-direction: row;
+      margin-left: 2rem; 
+      width: 95%;
+  }
+  .fa{
+      margin-left:0.5rem;
+  }
+  .copy{
+      margin-top: 7px;
+  }
+}
